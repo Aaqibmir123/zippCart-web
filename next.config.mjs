@@ -33,7 +33,7 @@ export default {
   distDir:
     process.env.ZIPPCART_WEB_TEST === "true"
       ? ".next-phase2-test"
-      : ".next-phase2",
+      : ".next",
   poweredByHeader: false,
   async headers() {
     return [
