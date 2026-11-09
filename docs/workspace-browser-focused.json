@@ -1,0 +1,169 @@
+{
+  "run": "Focused hydration/pagination regression; one WebKit navigation-cancellation diagnostic retained",
+  "stats": {
+    "startTime": "2026-11-08T10:32:12.940Z",
+    "duration": 237665.968,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "checks": [
+    {
+      "file": "admin.spec.ts",
+      "line": 16,
+      "title": "Overview period, queue links, route reload and browser history",
+      "project": "android-chromium-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 5728
+        }
+      ]
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 16,
+      "title": "Overview period, queue links, route reload and browser history",
+      "project": "iphone-webkit-emulation",
+      "status": "unexpected",
+      "runs": [
+        {
+          "status": "failed",
+          "durationMs": 5485
+        }
+      ]
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 258,
+      "title": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "android-chromium-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 4236
+        }
+      ]
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 258,
+      "title": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "iphone-webkit-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 5173
+        }
+      ]
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 71,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "android-chromium-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 12686
+        }
+      ]
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 71,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "iphone-webkit-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 19740
+        }
+      ]
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 187,
+      "title": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "android-chromium-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 7296
+        }
+      ]
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 187,
+      "title": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "iphone-webkit-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 8814
+        }
+      ]
+    },
+    {
+      "file": "workspace-security.spec.ts",
+      "line": 161,
+      "title": "ADMIN verified email recovery rejects unverified/reused links and revokes all old sessions",
+      "project": "android-chromium-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 14323
+        }
+      ]
+    },
+    {
+      "file": "workspace-security.spec.ts",
+      "line": 161,
+      "title": "ADMIN verified email recovery rejects unverified/reused links and revokes all old sessions",
+      "project": "iphone-webkit-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 16903
+        }
+      ]
+    },
+    {
+      "file": "workspace-security.spec.ts",
+      "line": 161,
+      "title": "SELLER verified email recovery rejects unverified/reused links and revokes all old sessions",
+      "project": "android-chromium-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 13067
+        }
+      ]
+    },
+    {
+      "file": "workspace-security.spec.ts",
+      "line": 161,
+      "title": "SELLER verified email recovery rejects unverified/reused links and revokes all old sessions",
+      "project": "iphone-webkit-emulation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 16982
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "run": "Final full backend regression including approved-store guard and pending recovery-channel cancellation",
+  "tests": 462,
+  "passed": 436,
+  "failed": 0,
+  "skipped": 26,
+  "reasonForSkips": "Existing integration opt-ins disabled; actual local MongoDB business flows are exercised separately by browser acceptance."
+}

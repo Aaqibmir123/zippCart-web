@@ -1,0 +1,656 @@
+{
+  "note": "Initial optimized browser run before final parity and test harness fixes. Superseded by the final report.",
+  "scenarios": [
+    {
+      "feature": "Overview period, queue links, route reload and browser history",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Overview period, queue links, route reload and browser history",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Overview period, queue links, route reload and browser history",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Overview period, queue links, route reload and browser history",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Dispatch settings validation and persisted backend contract",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Dispatch settings validation and persisted backend contract",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Dispatch settings validation and persisted backend contract",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Dispatch settings validation and persisted backend contract",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Review moderation and audit history",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Review moderation and audit history",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Review moderation and audit history",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Review moderation and audit history",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin password, server authorization, refresh and mobile logout",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin password, server authorization, refresh and mobile logout",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  32 |       .filter((cookie) => /Token/.test(cookie.name))\n  33 |       .every((cookie) => cookie.httpOnly && cookie.sameSite === \"Lax\"),\n> 34 |   ).toBe(true);\n     |     ^\n  35 |   expect(\n  36 |     await page.evaluate(() => document.cookie.includes(\"accessToken\")),\n  37 |   ).toBe(false);\n    at C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\auth.spec.ts:34:5"
+    },
+    {
+      "feature": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: Uncaught browser errors, including hydration mismatches\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/inventory/alerts?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/orders?page=1&queue=all due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/products?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/earnings?period=month&date=2026-11-08&page=1&state=all due to access control checks.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n   at test.ts:11\n\n   9 |         errors,\n  10 |         \"Uncaught browser errors, including hydration mismatches\",\n> 11 |       ).toEqual([]);\n     |         ^\n  12 |     },\n  13 |     { auto: true },\n  14 |   ],\n    at Object.exports.test._test.test.extend.browserErrors.auto (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\test.ts:11:9)"
+    },
+    {
+      "feature": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: Uncaught browser errors, including hydration mismatches\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/inventory/alerts?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/orders?page=1&queue=all due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/products?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/earnings?period=month&date=2026-11-08&page=1&state=all due to access control checks.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n   at test.ts:11\n\n   9 |         errors,\n  10 |         \"Uncaught browser errors, including hydration mismatches\",\n> 11 |       ).toEqual([]);\n     |         ^\n  12 |     },\n  13 |     { auto: true },\n  14 |   ],\n    at Object.exports.test._test.test.extend.browserErrors.auto (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\test.ts:11:9)"
+    },
+    {
+      "feature": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller availability, ownership isolation and browser notification links",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller availability, ownership isolation and browser notification links",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller availability, ownership isolation and browser notification links",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller availability, ownership isolation and browser notification links",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: Uncaught browser errors, including hydration mismatches\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/inventory/alerts?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/orders?page=1&queue=all due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/products?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/earnings?period=month&date=2026-11-08&page=1&state=all due to access control checks.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n   at test.ts:11\n\n   9 |         errors,\n  10 |         \"Uncaught browser errors, including hydration mismatches\",\n> 11 |       ).toEqual([]);\n     |         ^\n  12 |     },\n  13 |     { auto: true },\n  14 |   ],\n    at Object.exports.test._test.test.extend.browserErrors.auto (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\test.ts:11:9)"
+    },
+    {
+      "feature": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: Uncaught browser errors, including hydration mismatches\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/inventory/alerts?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/orders?page=1&queue=all due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/products?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/earnings?period=month&date=2026-11-08&page=1&state=all due to access control checks.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n   at test.ts:11\n\n   9 |         errors,\n  10 |         \"Uncaught browser errors, including hydration mismatches\",\n> 11 |       ).toEqual([]);\n     |         ^\n  12 |     },\n  13 |     { auto: true },\n  14 |   ],\n    at Object.exports.test._test.test.extend.browserErrors.auto (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\test.ts:11:9)"
+    },
+    {
+      "feature": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: Uncaught browser errors, including hydration mismatches\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/inventory/alerts?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/orders?page=1&queue=all due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/products?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/earnings?period=month&date=2026-11-08&page=1&state=all due to access control checks.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n   at test.ts:11\n\n   9 |         errors,\n  10 |         \"Uncaught browser errors, including hydration mismatches\",\n> 11 |       ).toEqual([]);\n     |         ^\n  12 |     },\n  13 |     { auto: true },\n  14 |   ],\n    at Object.exports.test._test.test.extend.browserErrors.auto (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\test.ts:11:9)"
+    },
+    {
+      "feature": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: Uncaught browser errors, including hydration mismatches\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/inventory/alerts?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/orders?page=1&queue=all due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/products?page=1 due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/seller/earnings?period=month&date=2026-11-08&page=1&state=all due to access control checks.\",\u001b[39m\n\u001b[31m+   \"/127.0.0.1:4500/api/v1/reviews/seller?page=1&status=all due to access control checks.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n   at test.ts:11\n\n   9 |         errors,\n  10 |         \"Uncaught browser errors, including hydration mismatches\",\n> 11 |       ).toEqual([]);\n     |         ^\n  12 |     },\n  13 |     { auto: true },\n  14 |   ],\n    at Object.exports.test._test.test.extend.browserErrors.auto (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\test.ts:11:9)"
+    },
+    {
+      "feature": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Original-payment refunds expose no manual completion or information action",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Original-payment refunds expose no manual completion or information action",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Original-payment refunds expose no manual completion or information action",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Original-payment refunds expose no manual completion or information action",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Current-password change revokes every real session and permits only the new password",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Current-password change revokes every real session and permits only the new password",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Current-password change revokes every real session and permits only the new password",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Current-password change revokes every real session and permits only the new password",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "desktop-chromium",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "desktop-firefox",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "android-chromium-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "iphone-webkit-emulation",
+      "status": "passed"
+    },
+    {
+      "feature": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "desktop-chromium",
+      "status": "failed",
+      "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog', { name: 'Start review?' })\nExpected: not visible\nReceived: visible\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" getByRole('dialog', { name: 'Start review?' }) with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Start review?' })\u001b[22m\n\u001b[2m    43 × locator resolved to <dialog open=\"\" aria-label=\"Start review?\" class=\"m-auto max-h-[90dvh] w-[min(94vw,56rem)] overflow-auto rounded-2xl border-0 bg-white p-5 text-slate-900 shadow-2xl backdrop:bg-slate-950/50 sm:p-8\">…</dialog>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   at helpers.ts:67\n\n  65 |   await expect(dialog).toBeVisible();\n  66 |   await dialog.getByRole(\"button\").last().click();\n> 67 |   await expect(dialog).not.toBeVisible();\n     |                            ^\n  68 | }\n  69 | export async function noOverflow(page: Page) {\n  70 |   expect(\n    at confirm (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\helpers.ts:67:28)\n    at adminAction (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:303:5)\n    at C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:305:3"
+    },
+    {
+      "feature": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "desktop-firefox",
+      "status": "failed",
+      "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog', { name: 'Start review?' })\nExpected: not visible\nReceived: visible\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" getByRole('dialog', { name: 'Start review?' }) with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Start review?' })\u001b[22m\n\u001b[2m    42 × locator resolved to <dialog open=\"\" aria-label=\"Start review?\" class=\"m-auto max-h-[90dvh] w-[min(94vw,56rem)] overflow-auto rounded-2xl border-0 bg-white p-5 text-slate-900 shadow-2xl backdrop:bg-slate-950/50 sm:p-8\">…</dialog>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   at helpers.ts:67\n\n  65 |   await expect(dialog).toBeVisible();\n  66 |   await dialog.getByRole(\"button\").last().click();\n> 67 |   await expect(dialog).not.toBeVisible();\n     |                            ^\n  68 | }\n  69 | export async function noOverflow(page: Page) {\n  70 |   expect(\n    at confirm (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\helpers.ts:67:28)\n    at adminAction (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:303:5)\n    at C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:305:3"
+    },
+    {
+      "feature": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "android-chromium-emulation",
+      "status": "failed",
+      "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog', { name: 'Start review?' })\nExpected: not visible\nReceived: visible\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" getByRole('dialog', { name: 'Start review?' }) with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Start review?' })\u001b[22m\n\u001b[2m    43 × locator resolved to <dialog open=\"\" aria-label=\"Start review?\" class=\"m-auto max-h-[90dvh] w-[min(94vw,56rem)] overflow-auto rounded-2xl border-0 bg-white p-5 text-slate-900 shadow-2xl backdrop:bg-slate-950/50 sm:p-8\">…</dialog>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   at helpers.ts:67\n\n  65 |   await expect(dialog).toBeVisible();\n  66 |   await dialog.getByRole(\"button\").last().click();\n> 67 |   await expect(dialog).not.toBeVisible();\n     |                            ^\n  68 | }\n  69 | export async function noOverflow(page: Page) {\n  70 |   expect(\n    at confirm (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\helpers.ts:67:28)\n    at adminAction (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:303:5)\n    at C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:305:3"
+    },
+    {
+      "feature": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog', { name: 'Start review?' })\nExpected: not visible\nReceived: visible\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" getByRole('dialog', { name: 'Start review?' }) with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Start review?' })\u001b[22m\n\u001b[2m    43 × locator resolved to <dialog open=\"\" aria-label=\"Start review?\" class=\"m-auto max-h-[90dvh] w-[min(94vw,56rem)] overflow-auto rounded-2xl border-0 bg-white p-5 text-slate-900 shadow-2xl backdrop:bg-slate-950/50 sm:p-8\">…</dialog>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   at helpers.ts:67\n\n  65 |   await expect(dialog).toBeVisible();\n  66 |   await dialog.getByRole(\"button\").last().click();\n> 67 |   await expect(dialog).not.toBeVisible();\n     |                            ^\n  68 | }\n  69 | export async function noOverflow(page: Page) {\n  70 |   expect(\n    at confirm (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\helpers.ts:67:28)\n    at adminAction (C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:303:5)\n    at C:\\Users\\User\\Desktop\\ZippCart\\web\\tests\\acceptance\\workflows.spec.ts:305:3"
+    }
+  ]
+}

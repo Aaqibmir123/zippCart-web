@@ -1,0 +1,530 @@
+[
+  {
+    "file": "src/components/stock-alerts.tsx",
+    "line": 25,
+    "method": "GET",
+    "endpointExpression": "`${admin ? \"/admin/stock-alerts\" : \"/seller/inventory/alerts\"}?page=${pageParam}`"
+  },
+  {
+    "file": "src/features/admin/earnings/earnings-api.ts",
+    "line": 13,
+    "method": "POST",
+    "endpointExpression": "`/admin/earnings/stores/${storeId}/payouts`"
+  },
+  {
+    "file": "src/features/admin/earnings/earnings-api.ts",
+    "line": 15,
+    "method": "POST",
+    "endpointExpression": "`/admin/earnings/orders/${orderId}/collection`"
+  },
+  {
+    "file": "src/features/admin/overview/analytics-api.ts",
+    "line": 67,
+    "method": "GET",
+    "endpointExpression": "`/admin/analytics?days=${days}`"
+  },
+  {
+    "file": "src/features/admin/products/products-api.ts",
+    "line": 43,
+    "method": "GET",
+    "endpointExpression": "`/admin/products?${params}`"
+  },
+  {
+    "file": "src/features/admin/products/products-api.ts",
+    "line": 49,
+    "method": "GET",
+    "endpointExpression": "`/admin/products/${id}`"
+  },
+  {
+    "file": "src/features/admin/products/products-api.ts",
+    "line": 58,
+    "method": "POST",
+    "endpointExpression": "`/admin/products/${id}/review`"
+  },
+  {
+    "file": "src/features/admin/reviews/reviews-api.ts",
+    "line": 5,
+    "method": "GET",
+    "endpointExpression": "`/reviews/admin?page=${page}&status=${status}${rating ? `&rating=${rating}` : \"\"}${productId ? `&productId=${encodeURIComponent(productId)}` : \"\"}`"
+  },
+  {
+    "file": "src/features/admin/reviews/reviews-api.ts",
+    "line": 10,
+    "method": "POST",
+    "endpointExpression": "`/reviews/admin/${id}/moderate`"
+  },
+  {
+    "file": "src/features/admin/reviews/reviews-api.ts",
+    "line": 14,
+    "method": "GET",
+    "endpointExpression": "`/reviews/admin/${id}/audit`"
+  },
+  {
+    "file": "src/features/admin/sellers/sellers-api.ts",
+    "line": 27,
+    "method": "GET",
+    "endpointExpression": "\"/admin/sellers?\" +\n        new URLSearchParams(\n          Object.entries(filters).map(([key, value]) => [key, String(value)]),\n        )"
+  },
+  {
+    "file": "src/features/admin/sellers/sellers-api.ts",
+    "line": 40,
+    "method": "GET",
+    "endpointExpression": "\"/admin/sellers/\" + id"
+  },
+  {
+    "file": "src/features/admin/sellers/sellers-api.ts",
+    "line": 44,
+    "method": "POST",
+    "endpointExpression": "\"/admin/sellers/\" + id + \"/password-reset\""
+  },
+  {
+    "file": "src/features/admin/sellers/sellers-api.ts",
+    "line": 49,
+    "method": "POST",
+    "endpointExpression": "\"/admin/sellers\""
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 130,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/orders?${params}`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 152,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/orders/search?${params}`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 158,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/${id}`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 162,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/in-transit?page=${page}`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 167,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/attention?page=${page}`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 172,
+    "method": "POST",
+    "endpointExpression": "`/admin/shipping/${id}/resolve-issue`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 176,
+    "method": "GET",
+    "endpointExpression": "\"/admin/settings/dispatch\""
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 180,
+    "method": "PATCH",
+    "endpointExpression": "\"/admin/settings/dispatch\""
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 182,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/ready?page=${page}`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 188,
+    "method": "POST",
+    "endpointExpression": "`/admin/shipping/${id}/label`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 192,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/${id}/label`"
+  },
+  {
+    "file": "src/features/admin/shipping/shipping-api.ts",
+    "line": 196,
+    "method": "POST",
+    "endpointExpression": "`/admin/shipping/${id}/dispatch`"
+  },
+  {
+    "file": "src/features/admin/stores/stores-api.ts",
+    "line": 29,
+    "method": "GET",
+    "endpointExpression": "`/admin/stores?status=${status}${cursor ? `&cursor=${encodeURIComponent(cursor)}` : \"\"}`"
+  },
+  {
+    "file": "src/features/admin/stores/stores-api.ts",
+    "line": 34,
+    "method": "GET",
+    "endpointExpression": "\"/admin/stores/counts\""
+  },
+  {
+    "file": "src/features/admin/stores/stores-api.ts",
+    "line": 39,
+    "method": "GET",
+    "endpointExpression": "`/admin/stores/${id}`"
+  },
+  {
+    "file": "src/features/admin/stores/stores-api.ts",
+    "line": 43,
+    "method": "GET",
+    "endpointExpression": "`/admin/stores/${id}/documents/${name}`"
+  },
+  {
+    "file": "src/features/admin/stores/stores-api.ts",
+    "line": 53,
+    "method": "PATCH",
+    "endpointExpression": "`/admin/stores/${id}/status`"
+  },
+  {
+    "file": "src/features/admin/stores/stores-api.ts",
+    "line": 63,
+    "method": "PATCH",
+    "endpointExpression": "`/admin/stores/${id}/active`"
+  },
+  {
+    "file": "src/features/admin/support/legacy-api.ts",
+    "line": 48,
+    "method": "GET",
+    "endpointExpression": "`/admin/returns?status=${status}&page=${page}`"
+  },
+  {
+    "file": "src/features/admin/support/legacy-api.ts",
+    "line": 54,
+    "method": "GET",
+    "endpointExpression": "`/admin/returns/${id}`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 10,
+    "method": "GET",
+    "endpointExpression": "`/returns/admin?status=${status}&page=${page}`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 16,
+    "method": "GET",
+    "endpointExpression": "`/returns/admin/orders/${orderId}`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 20,
+    "method": "POST",
+    "endpointExpression": "`/returns/admin/orders/${record.orderId}/${record.id}/read`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 24,
+    "method": "POST",
+    "endpointExpression": "`/returns/admin/orders/${record.orderId}/${record.id}/actions`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 29,
+    "method": "GET",
+    "endpointExpression": "`/returns/orders/${record.orderId}/${record.id}/payout`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 34,
+    "method": "POST",
+    "endpointExpression": "`/returns/orders/${orderId}/photos`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 39,
+    "method": "POST",
+    "endpointExpression": "`/returns/orders/${orderId}/photos/binary`"
+  },
+  {
+    "file": "src/features/admin/support/support-api.ts",
+    "line": 44,
+    "method": "GET",
+    "endpointExpression": "`/returns/orders/${orderId}/photos/${id}`"
+  },
+  {
+    "file": "src/features/auth/recovery-api.ts",
+    "line": 7,
+    "method": "GET",
+    "endpointExpression": "\"/auth/password/settings\""
+  },
+  {
+    "file": "src/features/auth/recovery-api.ts",
+    "line": 14,
+    "method": "POST",
+    "endpointExpression": "\"/auth/password/recovery/email\""
+  },
+  {
+    "file": "src/features/auth/recovery-api.ts",
+    "line": 19,
+    "method": "POST",
+    "endpointExpression": "\"/auth/password/recovery/request\""
+  },
+  {
+    "file": "src/features/auth/recovery-api.ts",
+    "line": 24,
+    "method": "POST",
+    "endpointExpression": "\"/auth/password/recovery/verify\""
+  },
+  {
+    "file": "src/features/auth/recovery-api.ts",
+    "line": 29,
+    "method": "POST",
+    "endpointExpression": "\"/auth/password/recovery/reset\""
+  },
+  {
+    "file": "src/features/notifications/notifications-screen.tsx",
+    "line": 22,
+    "method": "GET",
+    "endpointExpression": "`/notifications/inbox?page=${pageParam}&limit=20`"
+  },
+  {
+    "file": "src/features/seller/orders/orders-api.ts",
+    "line": 90,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/viewed`"
+  },
+  {
+    "file": "src/features/seller/orders/orders-api.ts",
+    "line": 92,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/stock-issue`"
+  },
+  {
+    "file": "src/features/seller/orders/orders-api.ts",
+    "line": 96,
+    "method": "GET",
+    "endpointExpression": "`/seller/orders?page=${page}&queue=${queue}`"
+  },
+  {
+    "file": "src/features/seller/orders/orders-api.ts",
+    "line": 104,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/dispatch`"
+  },
+  {
+    "file": "src/features/seller/orders/orders-api.ts",
+    "line": 106,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/ready`"
+  },
+  {
+    "file": "src/features/seller/orders/orders-api.ts",
+    "line": 108,
+    "method": "PATCH",
+    "endpointExpression": "`/seller/orders/${id}/preparation`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 18,
+    "method": "GET",
+    "endpointExpression": "`/seller/products?page=${page}${archived ? \"&archived=true\" : \"\"}`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 27,
+    "method": "GET",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 32,
+    "method": "POST",
+    "endpointExpression": "\"/seller/products\""
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 38,
+    "method": "PUT",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 50,
+    "method": "PATCH",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/inventory`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 55,
+    "method": "PATCH",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/status`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 60,
+    "method": "POST",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/archive`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 64,
+    "method": "POST",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/restore`"
+  },
+  {
+    "file": "src/features/seller/products/product-api.ts",
+    "line": 68,
+    "method": "DELETE",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}`"
+  },
+  {
+    "file": "src/features/seller/reviews/reviews-api.ts",
+    "line": 5,
+    "method": "GET",
+    "endpointExpression": "`/reviews/seller?page=${page}&status=${status}${rating ? `&rating=${rating}` : \"\"}${productId ? `&productId=${encodeURIComponent(productId)}` : \"\"}`"
+  },
+  {
+    "file": "src/features/seller/reviews/reviews-api.ts",
+    "line": 15,
+    "method": "POST",
+    "endpointExpression": "`/reviews/seller/${id}/reply`"
+  },
+  {
+    "file": "src/features/seller/session/seller-access.tsx",
+    "line": 18,
+    "method": "GET",
+    "endpointExpression": "\"/seller/session\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 29,
+    "method": "GET",
+    "endpointExpression": "\"/auth/password/invitation\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 34,
+    "method": "GET",
+    "endpointExpression": "\"/stores/me/details\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 38,
+    "method": "GET",
+    "endpointExpression": "\"/stores/me/details/documents\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 53,
+    "method": "POST",
+    "endpointExpression": "\"/stores/owner-phone/request\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 55,
+    "method": "POST",
+    "endpointExpression": "\"/stores/owner-phone/verify\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 60,
+    "method": "GET",
+    "endpointExpression": "\"/stores/me\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 62,
+    "method": "PATCH",
+    "endpointExpression": "\"/stores/me/availability\""
+  },
+  {
+    "file": "src/features/seller/store/store-api.ts",
+    "line": 81,
+    "method": "expectedRevision === undefined ? \"POST\" : \"PATCH\"",
+    "endpointExpression": "expectedRevision === undefined ? \"/stores\" : \"/stores/me/details\""
+  },
+  {
+    "file": "src/lib/api/auth-api.ts",
+    "line": 42,
+    "method": "POST",
+    "endpointExpression": "\"/auth/password/login\""
+  },
+  {
+    "file": "src/lib/api/auth-api.ts",
+    "line": 56,
+    "method": "POST",
+    "endpointExpression": "\"/auth/password/change\""
+  },
+  {
+    "file": "src/lib/api/auth-api.ts",
+    "line": 64,
+    "method": "GET",
+    "endpointExpression": "\"/auth/me\""
+  },
+  {
+    "file": "src/lib/api/auth-api.ts",
+    "line": 66,
+    "method": "POST",
+    "endpointExpression": "\"/auth/refresh\""
+  },
+  {
+    "file": "src/lib/api/auth-api.ts",
+    "line": 69,
+    "method": "POST",
+    "endpointExpression": "\"/auth/logout\""
+  },
+  {
+    "file": "src/lib/api/rto-api.ts",
+    "line": 91,
+    "method": "POST",
+    "endpointExpression": "`/rto/orders/${orderId}`"
+  },
+  {
+    "file": "src/lib/api/rto-api.ts",
+    "line": 93,
+    "method": "GET",
+    "endpointExpression": "`/rto/admin?page=${page}`"
+  },
+  {
+    "file": "src/lib/api/rto-api.ts",
+    "line": 99,
+    "method": "POST",
+    "endpointExpression": "`/rto/admin/orders/${orderId}/actions`"
+  },
+  {
+    "file": "src/lib/api/rto-api.ts",
+    "line": 103,
+    "method": "POST",
+    "endpointExpression": "`/rto/seller/orders/${orderId}/receipt`"
+  },
+  {
+    "file": "src/lib/api/rto-api.ts",
+    "line": 107,
+    "method": "POST",
+    "endpointExpression": "`/rto/seller/orders/${orderId}/inspection`"
+  },
+  {
+    "file": "src/lib/auth/pending-logout.ts",
+    "line": 22,
+    "method": "POST",
+    "endpointExpression": "\"/auth/logout\""
+  },
+  {
+    "file": "src/lib/earnings/earnings-api.ts",
+    "line": 90,
+    "method": "GET",
+    "endpointExpression": "`/${admin ? \"admin\" : \"seller\"}/earnings?period=${period}&date=${date}&page=${page}&state=${state}${admin && storeId ? `&storeId=${storeId}` : \"\"}`"
+  },
+  {
+    "file": "src/lib/earnings/earnings-api.ts",
+    "line": 112,
+    "method": "GET",
+    "endpointExpression": "admin\n          ? `/admin/earnings/stores/${storeId}/account`\n          : \"/seller/earnings/account\""
+  },
+  {
+    "file": "src/lib/media/images.ts",
+    "line": 79,
+    "method": "POST",
+    "endpointExpression": "\"/media/products\""
+  }
+]

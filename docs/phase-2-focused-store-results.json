@@ -1,0 +1,133 @@
+{
+  "run": "focused store review and pagination before readiness wait correction",
+  "stats": {
+    "startTime": "2026-11-08T05:32:25.097Z",
+    "duration": 91711.01,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "pagination.spec.ts",
+      "line": 67,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "desktop-chromium",
+      "status": "failed",
+      "durationMs": 3059,
+      "retry": 0,
+      "issue": "TEST_PAGINATION_READY_WAIT"
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 67,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "desktop-firefox",
+      "status": "failed",
+      "durationMs": 4526,
+      "retry": 0,
+      "issue": "TEST_PAGINATION_READY_WAIT"
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 67,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "android-chromium-emulation",
+      "status": "failed",
+      "durationMs": 2292,
+      "retry": 0,
+      "issue": "TEST_PAGINATION_READY_WAIT"
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 67,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "durationMs": 3468,
+      "retry": 0,
+      "issue": "TEST_PAGINATION_READY_WAIT"
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 21,
+      "title": "Proposed store changes retain live details until Admin rejection or approval",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 4450,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 21,
+      "title": "Proposed store changes retain live details until Admin rejection or approval",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 6826,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 21,
+      "title": "Proposed store changes retain live details until Admin rejection or approval",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3631,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 21,
+      "title": "Proposed store changes retain live details until Admin rejection or approval",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 7711,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 83,
+      "title": "Rejected owner corrects and resubmits with validated bank details and remains unapproved",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2344,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 83,
+      "title": "Rejected owner corrects and resubmits with validated bank details and remains unapproved",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3290,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 83,
+      "title": "Rejected owner corrects and resubmits with validated bank details and remains unapproved",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2663,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "store-review.spec.ts",
+      "line": 83,
+      "title": "Rejected owner corrects and resubmits with validated bank details and remains unapproved",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4296,
+      "retry": 0,
+      "issue": null
+    }
+  ]
+}

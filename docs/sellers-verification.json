@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-08",
+  "scope": "Existing local database owned fixtures and disposable browser fixtures only",
+  "existingLocalWorkflow": {
+    "database": "zippcart_local",
+    "passed": true,
+    "preExistingCredentialSnapshotsUnchanged": true,
+    "fixturesRemoved": true,
+    "oldPasswordRejected": true,
+    "logoutDeniesAccess": true,
+    "onboardingApprovalPreserved": true,
+    "existingSellerDetailRead": true,
+    "personalPasswordMatch": null
+  },
+  "backend": {
+    "command": "npm run test:unit",
+    "total": 466,
+    "passed": 439,
+    "failed": 0,
+    "skipped": 27
+  },
+  "web": {
+    "passed": 17,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "format": "passed",
+  "sourceSize": {
+    "passed": true,
+    "files": 782,
+    "limitExclusive": 500
+  },
+  "sourceAudit": {
+    "modules": 187,
+    "apiCallSites": 89,
+    "nativeImports": 0,
+    "largestSourceFileLines": 414
+  },
+  "browserInitial": {
+    "total": 164,
+    "passed": 163,
+    "failed": 1,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "browserFocused": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "repetitionsPerProject": 3,
+    "byProject": {
+      "desktop-chromium": 3,
+      "desktop-firefox": 3,
+      "android-chromium-emulation": 3,
+      "iphone-webkit-emulation": 3
+    }
+  },
+  "physicalDevices": "Android deferred; no iPhone available",
+  "production": {
+    "connected": false,
+    "recordsModified": 0,
+    "deployed": false,
+    "pushed": false
+  },
+  "existingSellerCredentialsReset": false,
+  "emailDeliveryConfigured": false,
+  "nativeCleanup": "NO-GO",
+  "completeBrowserRerunAfterTestSynchronization": false,
+  "localSmoke": {
+    "loginPageStatus": 200,
+    "anonymousSellersApiStatus": 401
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "project": "android-chromium-emulation",
+    "scenario": "Synthetic local login, cold browser context, optimized Next build",
+    "scriptRequests": 12,
+    "decodedScriptBytes": 533285,
+    "ttfbMs": 1.9000000953674316,
+    "domContentLoadedMs": 33.39999997615814,
+    "loadMs": 77.10000002384186
+  },
+  {
+    "project": "desktop-chromium",
+    "scenario": "Synthetic local login, cold browser context, optimized Next build",
+    "scriptRequests": 12,
+    "decodedScriptBytes": 533285,
+    "ttfbMs": 2.3000000715255737,
+    "domContentLoadedMs": 21.200000047683716,
+    "loadMs": 109.5
+  },
+  {
+    "project": "desktop-firefox",
+    "scenario": "Synthetic local login, cold browser context, optimized Next build",
+    "scriptRequests": 12,
+    "decodedScriptBytes": 533285,
+    "ttfbMs": 2,
+    "domContentLoadedMs": 51,
+    "loadMs": 94
+  },
+  {
+    "project": "iphone-webkit-emulation",
+    "scenario": "Synthetic local login, cold browser context, optimized Next build",
+    "scriptRequests": 12,
+    "decodedScriptBytes": 533285,
+    "ttfbMs": 2,
+    "domContentLoadedMs": 29,
+    "loadMs": 84
+  }
+]

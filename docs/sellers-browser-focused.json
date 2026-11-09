@@ -1,0 +1,175 @@
+{
+  "scope": "Failed-login retry test after removal of unnecessary hard navigation; strict error/cookie/origin assertions retained",
+  "stats": {
+    "startTime": "2026-11-08T13:20:14.803Z",
+    "duration": 98614.26699999999,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "byProject": {
+    "desktop-chromium": 3,
+    "desktop-firefox": 3,
+    "android-chromium-emulation": 3,
+    "iphone-webkit-emulation": 3
+  },
+  "cases": [
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-chromium",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 3877
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-chromium",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 2776
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-chromium",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 2705
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-firefox",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 6248
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-firefox",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 6399
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-firefox",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 5386
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "android-chromium-emulation",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 2762
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "android-chromium-emulation",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 3607
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "android-chromium-emulation",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 2859
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "iphone-webkit-emulation",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 3872
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "iphone-webkit-emulation",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 3915
+        }
+      ]
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 15,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "iphone-webkit-emulation",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 4010
+        }
+      ]
+    }
+  ]
+}

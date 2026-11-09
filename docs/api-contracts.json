@@ -1,0 +1,614 @@
+[
+  {
+    "file": "src/migrated/components/shop/InventoryAlerts.tsx",
+    "line": 17,
+    "method": "GET",
+    "endpointExpression": "`${admin ? '/admin/stock-alerts' : '/seller/inventory/alerts'}?page=${pageParam}`"
+  },
+  {
+    "file": "src/migrated/features/admin/dashboard/dashboard-api.ts",
+    "line": 32,
+    "method": "GET",
+    "endpointExpression": "`/admin/analytics?days=${days}`"
+  },
+  {
+    "file": "src/migrated/features/admin/payouts/payout-api.ts",
+    "line": 5,
+    "method": "POST",
+    "endpointExpression": "`/admin/earnings/stores/${storeId}/payouts`"
+  },
+  {
+    "file": "src/migrated/features/admin/payouts/payout-api.ts",
+    "line": 7,
+    "method": "POST",
+    "endpointExpression": "`/admin/earnings/orders/${orderId}/collection`"
+  },
+  {
+    "file": "src/migrated/features/admin/products/product-review-api.ts",
+    "line": 9,
+    "method": "GET",
+    "endpointExpression": "`/admin/products?${params}`"
+  },
+  {
+    "file": "src/migrated/features/admin/products/product-review-api.ts",
+    "line": 11,
+    "method": "GET",
+    "endpointExpression": "`/admin/products/${id}`"
+  },
+  {
+    "file": "src/migrated/features/admin/products/product-review-api.ts",
+    "line": 13,
+    "method": "POST",
+    "endpointExpression": "`/admin/products/${id}/review`"
+  },
+  {
+    "file": "src/migrated/features/admin/returns/admin-return-api.ts",
+    "line": 17,
+    "method": "GET",
+    "endpointExpression": "`/admin/returns?status=${status}&page=${page}`"
+  },
+  {
+    "file": "src/migrated/features/admin/returns/admin-return-api.ts",
+    "line": 19,
+    "method": "GET",
+    "endpointExpression": "`/admin/returns/${id}`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 38,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/orders?${params}`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 44,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/orders/search?${params}`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 46,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/${id}`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 47,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/in-transit?page=${page}`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 48,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/attention?page=${page}`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 49,
+    "method": "POST",
+    "endpointExpression": "`/admin/shipping/${id}/resolve-issue`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 50,
+    "method": "GET",
+    "endpointExpression": "'/admin/settings/dispatch'"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 51,
+    "method": "PATCH",
+    "endpointExpression": "'/admin/settings/dispatch'"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 52,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/ready?page=${page}`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 53,
+    "method": "POST",
+    "endpointExpression": "`/admin/shipping/${id}/label`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 54,
+    "method": "GET",
+    "endpointExpression": "`/admin/shipping/${id}/label`"
+  },
+  {
+    "file": "src/migrated/features/admin/shipping/admin-shipping-api.ts",
+    "line": 55,
+    "method": "POST",
+    "endpointExpression": "`/admin/shipping/${id}/dispatch`"
+  },
+  {
+    "file": "src/migrated/features/admin/stores/admin-api.ts",
+    "line": 26,
+    "method": "GET",
+    "endpointExpression": "`/admin/stores?status=${status}${cursor ? `&cursor=${encodeURIComponent(cursor)}` : \"\"}`"
+  },
+  {
+    "file": "src/migrated/features/admin/stores/admin-api.ts",
+    "line": 31,
+    "method": "GET",
+    "endpointExpression": "\"/admin/stores/counts\""
+  },
+  {
+    "file": "src/migrated/features/admin/stores/admin-api.ts",
+    "line": 36,
+    "method": "GET",
+    "endpointExpression": "`/admin/stores/${id}`"
+  },
+  {
+    "file": "src/migrated/features/admin/stores/admin-api.ts",
+    "line": 40,
+    "method": "GET",
+    "endpointExpression": "`/admin/stores/${id}/documents/${name}`"
+  },
+  {
+    "file": "src/migrated/features/admin/stores/admin-api.ts",
+    "line": 44,
+    "method": "PATCH",
+    "endpointExpression": "`/admin/stores/${id}/status`"
+  },
+  {
+    "file": "src/migrated/features/admin/stores/admin-api.ts",
+    "line": 49,
+    "method": "PATCH",
+    "endpointExpression": "`/admin/stores/${id}/active`"
+  },
+  {
+    "file": "src/migrated/features/earnings/earnings-api.ts",
+    "line": 22,
+    "method": "GET",
+    "endpointExpression": "`/${admin ? 'admin' : 'seller'}/earnings?period=${period}&date=${date}&page=${page}&state=${state}${admin && storeId ? `&storeId=${storeId}` : ''}`"
+  },
+  {
+    "file": "src/migrated/features/earnings/earnings-api.ts",
+    "line": 31,
+    "method": "GET",
+    "endpointExpression": "admin\n      ? `/admin/earnings/stores/${storeId}/account` : '/seller/earnings/account'"
+  },
+  {
+    "file": "src/migrated/features/notifications/notification-inbox.ts",
+    "line": 13,
+    "method": "GET",
+    "endpointExpression": "`/notifications/inbox?page=${pageParam}&limit=20`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 9,
+    "method": "GET",
+    "endpointExpression": "`${path(record.orderId)}/${record.id}/payout`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 10,
+    "method": "POST",
+    "endpointExpression": "`${admin ? '/returns/admin/orders' : '/returns/orders'}/${record.orderId}/${record.id}/read`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 12,
+    "method": "GET",
+    "endpointExpression": "admin ? `/returns/admin/orders/${orderId}` : path(orderId)"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 13,
+    "method": "POST",
+    "endpointExpression": "path(orderId)"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 14,
+    "method": "POST",
+    "endpointExpression": "`${admin ? '/returns/admin/orders' : '/returns/orders'}/${record.orderId}/${record.id}/actions`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 16,
+    "method": "POST",
+    "endpointExpression": "`${path(orderId)}/photos`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 17,
+    "method": "POST",
+    "endpointExpression": "`${path(orderId)}/photos/binary`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 18,
+    "method": "GET",
+    "endpointExpression": "`${path(orderId)}/photos/${id}`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 59,
+    "method": "GET",
+    "endpointExpression": "`/returns/mine?status=${status}&page=${pageParam}`"
+  },
+  {
+    "file": "src/migrated/features/returns/return-api.ts",
+    "line": 68,
+    "method": "GET",
+    "endpointExpression": "`/returns/admin?status=${status}&page=${pageParam}`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 4,
+    "method": "GET",
+    "endpointExpression": "`/reviews/products/${id}?page=${page}&sort=${sort}`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 5,
+    "method": "GET",
+    "endpointExpression": "`/reviews/orders/${id}`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 6,
+    "method": "POST",
+    "endpointExpression": "'/reviews'"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 7,
+    "method": "POST",
+    "endpointExpression": "`/reviews/${id}/helpful`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 8,
+    "method": "GET",
+    "endpointExpression": "`/reviews/${admin ? 'admin' : 'seller'}?page=${page}&status=${status}${rating ? `&rating=${rating}` : ''}${productId ? `&productId=${encodeURIComponent(productId)}` : ''}`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 10,
+    "method": "POST",
+    "endpointExpression": "`/reviews/seller/${id}/reply`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 11,
+    "method": "POST",
+    "endpointExpression": "`/reviews/admin/${id}/moderate`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 12,
+    "method": "GET",
+    "endpointExpression": "`/reviews/admin/${id}/audit`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 14,
+    "method": "POST",
+    "endpointExpression": "`/reviews/${encodeURIComponent(id)}/report`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 16,
+    "method": "POST",
+    "endpointExpression": "`/reviews/${encodeURIComponent(id)}/block`"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 17,
+    "method": "GET",
+    "endpointExpression": "'/reviews/blocked-authors'"
+  },
+  {
+    "file": "src/migrated/features/reviews/review-api.ts",
+    "line": 18,
+    "method": "DELETE",
+    "endpointExpression": "`/reviews/blocked-authors/${encodeURIComponent(id)}`"
+  },
+  {
+    "file": "src/migrated/features/seller/orders/seller-order-api.ts",
+    "line": 34,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/viewed`"
+  },
+  {
+    "file": "src/migrated/features/seller/orders/seller-order-api.ts",
+    "line": 35,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/stock-issue`"
+  },
+  {
+    "file": "src/migrated/features/seller/orders/seller-order-api.ts",
+    "line": 36,
+    "method": "GET",
+    "endpointExpression": "`/seller/orders?page=${page}&queue=${queue}`"
+  },
+  {
+    "file": "src/migrated/features/seller/orders/seller-order-api.ts",
+    "line": 37,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/dispatch`"
+  },
+  {
+    "file": "src/migrated/features/seller/orders/seller-order-api.ts",
+    "line": 38,
+    "method": "POST",
+    "endpointExpression": "`/seller/orders/${id}/ready`"
+  },
+  {
+    "file": "src/migrated/features/seller/orders/seller-order-api.ts",
+    "line": 39,
+    "method": "PATCH",
+    "endpointExpression": "`/seller/orders/${id}/preparation`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 45,
+    "method": "GET",
+    "endpointExpression": "`/seller/products?page=${page}${archived ? '&archived=true' : ''}`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 48,
+    "method": "GET",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 51,
+    "method": "POST",
+    "endpointExpression": "\"/seller/products\""
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 54,
+    "method": "PUT",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 57,
+    "method": "PATCH",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/inventory`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 58,
+    "method": "PATCH",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/status`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 61,
+    "method": "POST",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/archive`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 62,
+    "method": "POST",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}/restore`"
+  },
+  {
+    "file": "src/migrated/features/seller/products/product-api.ts",
+    "line": 63,
+    "method": "DELETE",
+    "endpointExpression": "`/seller/products/${encodeURIComponent(id)}`"
+  },
+  {
+    "file": "src/migrated/features/user/store-registration/store-api.ts",
+    "line": 67,
+    "method": "GET",
+    "endpointExpression": "'/stores/me/details'"
+  },
+  {
+    "file": "src/migrated/features/user/store-registration/store-api.ts",
+    "line": 69,
+    "method": "GET",
+    "endpointExpression": "'/stores/me/details/documents'"
+  },
+  {
+    "file": "src/migrated/features/user/store-registration/store-api.ts",
+    "line": 79,
+    "method": "POST",
+    "endpointExpression": "'/stores/owner-phone/request'"
+  },
+  {
+    "file": "src/migrated/features/user/store-registration/store-api.ts",
+    "line": 80,
+    "method": "POST",
+    "endpointExpression": "'/stores/owner-phone/verify'"
+  },
+  {
+    "file": "src/migrated/features/user/store-registration/store-api.ts",
+    "line": 83,
+    "method": "GET",
+    "endpointExpression": "\"/stores/me\""
+  },
+  {
+    "file": "src/migrated/features/user/store-registration/store-api.ts",
+    "line": 84,
+    "method": "PATCH",
+    "endpointExpression": "'/stores/me/availability'"
+  },
+  {
+    "file": "src/migrated/features/user/store-registration/store-api.ts",
+    "line": 93,
+    "method": "expectedRevision === undefined ? POST : PATCH",
+    "endpointExpression": "expectedRevision === undefined ? '/stores' : '/stores/me/details'"
+  },
+  {
+    "file": "src/migrated/screens/seller/SellerModeScreen.tsx",
+    "line": 23,
+    "method": "GET",
+    "endpointExpression": "\"/seller/session\""
+  },
+  {
+    "file": "src/migrated/services/api/address-api.ts",
+    "line": 6,
+    "method": "GET",
+    "endpointExpression": "'/addresses'"
+  },
+  {
+    "file": "src/migrated/services/api/address-api.ts",
+    "line": 7,
+    "method": "id ? PUT : POST",
+    "endpointExpression": "id ? `/addresses/${id}` : '/addresses'"
+  },
+  {
+    "file": "src/migrated/services/api/address-api.ts",
+    "line": 8,
+    "method": "DELETE",
+    "endpointExpression": "`/addresses/${id}`"
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 39,
+    "method": "POST",
+    "endpointExpression": "'/auth/password/login'"
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 48,
+    "method": "POST",
+    "endpointExpression": "'/auth/password/change'"
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 52,
+    "method": "GET",
+    "endpointExpression": "\"/auth/me\""
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 54,
+    "method": "POST",
+    "endpointExpression": "\"/auth/mode\""
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 56,
+    "method": "POST",
+    "endpointExpression": "\"/auth/otp/request\""
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 68,
+    "method": "POST",
+    "endpointExpression": "\"/auth/otp/verify\""
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 75,
+    "method": "POST",
+    "endpointExpression": "\"/auth/refresh\""
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 76,
+    "method": "POST",
+    "endpointExpression": "\"/auth/logout\""
+  },
+  {
+    "file": "src/migrated/services/api/auth-api.ts",
+    "line": 78,
+    "method": "POST",
+    "endpointExpression": "\"/auth/account/delete\""
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 66,
+    "method": "POST",
+    "endpointExpression": "'/orders/quote'"
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 67,
+    "method": "POST",
+    "endpointExpression": "'/orders'"
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 71,
+    "method": "GET",
+    "endpointExpression": "`/orders?${params}`"
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 73,
+    "method": "GET",
+    "endpointExpression": "`/orders/${id}`"
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 74,
+    "method": "POST",
+    "endpointExpression": "`/orders/${id}/cancel`"
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 75,
+    "method": "GET",
+    "endpointExpression": "`/orders/${id}/reorder`"
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 76,
+    "method": "POST",
+    "endpointExpression": "`/orders/${id}/reorder`"
+  },
+  {
+    "file": "src/migrated/services/api/order-api.ts",
+    "line": 77,
+    "method": "POST",
+    "endpointExpression": "`/orders/${id}/received`"
+  },
+  {
+    "file": "src/migrated/services/api/rto-api.ts",
+    "line": 39,
+    "method": "POST",
+    "endpointExpression": "`/rto/orders/${orderId}`"
+  },
+  {
+    "file": "src/migrated/services/api/rto-api.ts",
+    "line": 40,
+    "method": "GET",
+    "endpointExpression": "`/rto/admin?page=${page}`"
+  },
+  {
+    "file": "src/migrated/services/api/rto-api.ts",
+    "line": 42,
+    "method": "POST",
+    "endpointExpression": "`/rto/admin/orders/${orderId}/actions`"
+  },
+  {
+    "file": "src/migrated/services/api/rto-api.ts",
+    "line": 44,
+    "method": "POST",
+    "endpointExpression": "`/rto/seller/orders/${orderId}/receipt`"
+  },
+  {
+    "file": "src/migrated/services/api/rto-api.ts",
+    "line": 46,
+    "method": "POST",
+    "endpointExpression": "`/rto/seller/orders/${orderId}/inspection`"
+  },
+  {
+    "file": "src/migrated/services/auth/pending-logout.ts",
+    "line": 18,
+    "method": "POST",
+    "endpointExpression": "'/auth/logout'"
+  },
+  {
+    "file": "src/migrated/services/media/image-upload.ts",
+    "line": 33,
+    "method": "POST",
+    "endpointExpression": "path"
+  }
+]

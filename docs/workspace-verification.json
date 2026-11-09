@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-08",
+  "scope": "Local source and disposable fixtures; no production/device proof",
+  "backend": {
+    "tests": 462,
+    "passed": 436,
+    "failed": 0,
+    "skipped": 26
+  },
+  "web": {
+    "passed": 17,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "format": "passed",
+  "sourceSize": {
+    "passed": true,
+    "files": 774,
+    "limitExclusive": 500
+  },
+  "sourceAudit": {
+    "modules": 181,
+    "apiCallSites": 86,
+    "nativeImports": 0,
+    "largestLines": 414,
+    "nativeRuntimeDependencies": 0
+  },
+  "protectedSource": {
+    "nativeFiles": 747,
+    "nativeChanged": 0,
+    "unrelatedBackendChanged": 0,
+    "authorizedExistingBackendSourceChanges": 20
+  },
+  "forgotPasswordServerRendering": {
+    "status": 200,
+    "phoneDisabledBeforeHydration": true,
+    "submitDisabledBeforeHydration": true
+  },
+  "production": {
+    "connected": false,
+    "recordsModified": 0,
+    "deployed": false,
+    "pushed": false,
+    "emailDeliveryConfigured": false
+  },
+  "devices": {
+    "androidPhysical": "Deferred by user",
+    "iphonePhysical": "Unavailable; emulation only"
+  },
+  "nativeCleanup": "NO-GO",
+  "browser": {
+    "passed": 156,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "projects": {
+      "desktop-chromium": {
+        "passed": 39,
+        "failed": 0,
+        "skipped": 0
+      },
+      "desktop-firefox": {
+        "passed": 39,
+        "failed": 0,
+        "skipped": 0
+      },
+      "android-chromium-emulation": {
+        "passed": 39,
+        "failed": 0,
+        "skipped": 0
+      },
+      "iphone-webkit-emulation": {
+        "passed": 39,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "cleanup": {
+    "ownedTestPortsFree": true,
+    "disposableDirectoriesRemaining": 0,
+    "temporaryBackendLogRemoved": true,
+    "ownedPreviewStopped": true
+  },
+  "normalBuild": {
+    "passed": true,
+    "optimized": true,
+    "smoke": {
+      "publicLogin": 200,
+      "publicForgotPassword": 200,
+      "anonymousAdmin": 307,
+      "anonymousSeller": 307,
+      "anonymousAccountSettings": 307,
+      "protectedDestination": "/login",
+      "createdBackendSession": false
+    }
+  }
+}

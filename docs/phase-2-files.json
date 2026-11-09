@@ -1,0 +1,758 @@
+[
+  {
+    "path": "src/app/account/password/page.tsx",
+    "lines": 17
+  },
+  {
+    "path": "src/app/account/settings/page.tsx",
+    "lines": 26
+  },
+  {
+    "path": "src/app/admin/earnings/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/layout.tsx",
+    "lines": 6
+  },
+  {
+    "path": "src/app/admin/notifications/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/products/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/products/[id]/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/admin/reviews/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/sellers/new/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/sellers/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/sellers/[id]/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/admin/settings/page.tsx",
+    "lines": 11
+  },
+  {
+    "path": "src/app/admin/shipping/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/shipping/rto/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/shipping/settings/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/shipping/[id]/label/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/admin/shipping/[id]/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/admin/stores/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/stores/[id]/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/admin/support/earlier/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/support/earlier/[id]/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/admin/support/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/admin/support/[orderId]/[caseId]/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/error.tsx",
+    "lines": 26
+  },
+  {
+    "path": "src/app/forgot-password/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "lines": 29
+  },
+  {
+    "path": "src/app/login/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/privacy/page.tsx",
+    "lines": 26
+  },
+  {
+    "path": "src/app/reset-password/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/application/edit/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/application/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/earnings/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/layout.tsx",
+    "lines": 6
+  },
+  {
+    "path": "src/app/seller/notifications/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/orders/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/orders/[id]/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/seller/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/products/new/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/products/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/products/[id]/edit/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/seller/products/[id]/inventory/page.tsx",
+    "lines": 10
+  },
+  {
+    "path": "src/app/seller/reviews/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/settings/page.tsx",
+    "lines": 11
+  },
+  {
+    "path": "src/app/seller/store/edit/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/seller/store/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/app/terms/page.tsx",
+    "lines": 26
+  },
+  {
+    "path": "src/app/verify-email/page.tsx",
+    "lines": 5
+  },
+  {
+    "path": "src/components/confirm-button.tsx",
+    "lines": 85
+  },
+  {
+    "path": "src/components/dialog.tsx",
+    "lines": 38
+  },
+  {
+    "path": "src/components/earnings-balances.tsx",
+    "lines": 115
+  },
+  {
+    "path": "src/components/earnings-statement.tsx",
+    "lines": 414
+  },
+  {
+    "path": "src/components/fulfillment-timeline.tsx",
+    "lines": 35
+  },
+  {
+    "path": "src/components/password-field.tsx",
+    "lines": 62
+  },
+  {
+    "path": "src/components/photo-picker.tsx",
+    "lines": 53
+  },
+  {
+    "path": "src/components/product-preview.tsx",
+    "lines": 101
+  },
+  {
+    "path": "src/components/review-list.tsx",
+    "lines": 187
+  },
+  {
+    "path": "src/components/stock-alerts.tsx",
+    "lines": 69
+  },
+  {
+    "path": "src/components/ui.tsx",
+    "lines": 302
+  },
+  {
+    "path": "src/components/workspace-layout.tsx",
+    "lines": 101
+  },
+  {
+    "path": "src/features/admin/earnings/earnings-api.ts",
+    "lines": 19
+  },
+  {
+    "path": "src/features/admin/earnings/earnings-screen.tsx",
+    "lines": 20
+  },
+  {
+    "path": "src/features/admin/earnings/record-payment.tsx",
+    "lines": 149
+  },
+  {
+    "path": "src/features/admin/overview/analytics-api.ts",
+    "lines": 76
+  },
+  {
+    "path": "src/features/admin/overview/monthly-commission.tsx",
+    "lines": 26
+  },
+  {
+    "path": "src/features/admin/overview/overview-screen.tsx",
+    "lines": 200
+  },
+  {
+    "path": "src/features/admin/products/product-detail.tsx",
+    "lines": 174
+  },
+  {
+    "path": "src/features/admin/products/products-api.ts",
+    "lines": 62
+  },
+  {
+    "path": "src/features/admin/products/products-screen.tsx",
+    "lines": 183
+  },
+  {
+    "path": "src/features/admin/reviews/reviews-api.ts",
+    "lines": 18
+  },
+  {
+    "path": "src/features/admin/reviews/reviews-screen.tsx",
+    "lines": 115
+  },
+  {
+    "path": "src/features/admin/sellers/create-seller-screen.tsx",
+    "lines": 210
+  },
+  {
+    "path": "src/features/admin/sellers/invitation-model.ts",
+    "lines": 27
+  },
+  {
+    "path": "src/features/admin/sellers/seller-detail.tsx",
+    "lines": 140
+  },
+  {
+    "path": "src/features/admin/sellers/seller-status.tsx",
+    "lines": 42
+  },
+  {
+    "path": "src/features/admin/sellers/sellers-api.ts",
+    "lines": 60
+  },
+  {
+    "path": "src/features/admin/sellers/sellers-screen.tsx",
+    "lines": 221
+  },
+  {
+    "path": "src/features/admin/shipping/dispatch-settings.tsx",
+    "lines": 191
+  },
+  {
+    "path": "src/features/admin/shipping/label-html.ts",
+    "lines": 54
+  },
+  {
+    "path": "src/features/admin/shipping/label-pdf.ts",
+    "lines": 113
+  },
+  {
+    "path": "src/features/admin/shipping/label-screen.tsx",
+    "lines": 213
+  },
+  {
+    "path": "src/features/admin/shipping/order-detail.tsx",
+    "lines": 397
+  },
+  {
+    "path": "src/features/admin/shipping/resolve-issue.tsx",
+    "lines": 63
+  },
+  {
+    "path": "src/features/admin/shipping/rto-actions.tsx",
+    "lines": 314
+  },
+  {
+    "path": "src/features/admin/shipping/rto-history.tsx",
+    "lines": 107
+  },
+  {
+    "path": "src/features/admin/shipping/rto-screen.tsx",
+    "lines": 79
+  },
+  {
+    "path": "src/features/admin/shipping/shipping-api.ts",
+    "lines": 212
+  },
+  {
+    "path": "src/features/admin/shipping/shipping-screen.tsx",
+    "lines": 359
+  },
+  {
+    "path": "src/features/admin/stores/store-detail.tsx",
+    "lines": 285
+  },
+  {
+    "path": "src/features/admin/stores/stores-api.ts",
+    "lines": 68
+  },
+  {
+    "path": "src/features/admin/stores/stores-screen.tsx",
+    "lines": 112
+  },
+  {
+    "path": "src/features/admin/support/action-model.ts",
+    "lines": 81
+  },
+  {
+    "path": "src/features/admin/support/case-actions.tsx",
+    "lines": 347
+  },
+  {
+    "path": "src/features/admin/support/case-details.tsx",
+    "lines": 203
+  },
+  {
+    "path": "src/features/admin/support/case-screen.tsx",
+    "lines": 144
+  },
+  {
+    "path": "src/features/admin/support/conversation.tsx",
+    "lines": 163
+  },
+  {
+    "path": "src/features/admin/support/evidence-photos.tsx",
+    "lines": 143
+  },
+  {
+    "path": "src/features/admin/support/legacy-api.ts",
+    "lines": 58
+  },
+  {
+    "path": "src/features/admin/support/legacy-screen.tsx",
+    "lines": 173
+  },
+  {
+    "path": "src/features/admin/support/progress-model.ts",
+    "lines": 99
+  },
+  {
+    "path": "src/features/admin/support/support-api.ts",
+    "lines": 48
+  },
+  {
+    "path": "src/features/admin/support/support-model.ts",
+    "lines": 98
+  },
+  {
+    "path": "src/features/admin/support/support-screen.tsx",
+    "lines": 116
+  },
+  {
+    "path": "src/features/auth/auth-provider.tsx",
+    "lines": 279
+  },
+  {
+    "path": "src/features/auth/customer-handoff.tsx",
+    "lines": 28
+  },
+  {
+    "path": "src/features/auth/forgot-password-screen.tsx",
+    "lines": 79
+  },
+  {
+    "path": "src/features/auth/legal-content.ts",
+    "lines": 101
+  },
+  {
+    "path": "src/features/auth/login-screen.tsx",
+    "lines": 163
+  },
+  {
+    "path": "src/features/auth/logout-button.tsx",
+    "lines": 34
+  },
+  {
+    "path": "src/features/auth/password-settings.tsx",
+    "lines": 117
+  },
+  {
+    "path": "src/features/auth/providers.tsx",
+    "lines": 50
+  },
+  {
+    "path": "src/features/auth/recovery-api.ts",
+    "lines": 41
+  },
+  {
+    "path": "src/features/auth/recovery-email-settings.tsx",
+    "lines": 124
+  },
+  {
+    "path": "src/features/auth/recovery-link-screen.tsx",
+    "lines": 154
+  },
+  {
+    "path": "src/features/auth/session-boundary.tsx",
+    "lines": 104
+  },
+  {
+    "path": "src/features/notifications/notifications-screen.tsx",
+    "lines": 108
+  },
+  {
+    "path": "src/features/seller/earnings/earnings-screen.tsx",
+    "lines": 6
+  },
+  {
+    "path": "src/features/seller/earnings/payout-overview.tsx",
+    "lines": 45
+  },
+  {
+    "path": "src/features/seller/home/home-screen.tsx",
+    "lines": 173
+  },
+  {
+    "path": "src/features/seller/layout/seller-sidebar.tsx",
+    "lines": 188
+  },
+  {
+    "path": "src/features/seller/layout/seller-workspace.tsx",
+    "lines": 57
+  },
+  {
+    "path": "src/features/seller/orders/order-detail.tsx",
+    "lines": 342
+  },
+  {
+    "path": "src/features/seller/orders/orders-api.ts",
+    "lines": 113
+  },
+  {
+    "path": "src/features/seller/orders/orders-screen.tsx",
+    "lines": 131
+  },
+  {
+    "path": "src/features/seller/orders/owned-order.ts",
+    "lines": 28
+  },
+  {
+    "path": "src/features/seller/orders/return-presentation.ts",
+    "lines": 113
+  },
+  {
+    "path": "src/features/seller/orders/rto-panel.tsx",
+    "lines": 200
+  },
+  {
+    "path": "src/features/seller/orders/stock-issue.tsx",
+    "lines": 73
+  },
+  {
+    "path": "src/features/seller/products/inventory-screen.tsx",
+    "lines": 124
+  },
+  {
+    "path": "src/features/seller/products/product-api.ts",
+    "lines": 72
+  },
+  {
+    "path": "src/features/seller/products/product-editor.tsx",
+    "lines": 31
+  },
+  {
+    "path": "src/features/seller/products/product-form.tsx",
+    "lines": 367
+  },
+  {
+    "path": "src/features/seller/products/product-model.ts",
+    "lines": 251
+  },
+  {
+    "path": "src/features/seller/products/product-photos.tsx",
+    "lines": 132
+  },
+  {
+    "path": "src/features/seller/products/products-screen.tsx",
+    "lines": 228
+  },
+  {
+    "path": "src/features/seller/products/use-product-editor.ts",
+    "lines": 169
+  },
+  {
+    "path": "src/features/seller/products/use-product-lifecycle.ts",
+    "lines": 53
+  },
+  {
+    "path": "src/features/seller/products/use-products.ts",
+    "lines": 84
+  },
+  {
+    "path": "src/features/seller/reviews/reviews-api.ts",
+    "lines": 19
+  },
+  {
+    "path": "src/features/seller/reviews/reviews-screen.tsx",
+    "lines": 88
+  },
+  {
+    "path": "src/features/seller/session/seller-access.tsx",
+    "lines": 40
+  },
+  {
+    "path": "src/features/seller/store/document-upload.tsx",
+    "lines": 77
+  },
+  {
+    "path": "src/features/seller/store/owner-phone-verification.tsx",
+    "lines": 99
+  },
+  {
+    "path": "src/features/seller/store/registration-form.tsx",
+    "lines": 293
+  },
+  {
+    "path": "src/features/seller/store/registration-model.ts",
+    "lines": 188
+  },
+  {
+    "path": "src/features/seller/store/store-api.ts",
+    "lines": 100
+  },
+  {
+    "path": "src/features/seller/store/store-screen.tsx",
+    "lines": 177
+  },
+  {
+    "path": "src/features/seller/store/use-store-registration.ts",
+    "lines": 227
+  },
+  {
+    "path": "src/lib/api/api-error.ts",
+    "lines": 149
+  },
+  {
+    "path": "src/lib/api/auth-api.ts",
+    "lines": 71
+  },
+  {
+    "path": "src/lib/api/client.ts",
+    "lines": 322
+  },
+  {
+    "path": "src/lib/api/config.ts",
+    "lines": 21
+  },
+  {
+    "path": "src/lib/api/foreground-request.ts",
+    "lines": 72
+  },
+  {
+    "path": "src/lib/api/response-error.ts",
+    "lines": 50
+  },
+  {
+    "path": "src/lib/api/rto-api.ts",
+    "lines": 111
+  },
+  {
+    "path": "src/lib/auth/auth-startup.ts",
+    "lines": 12
+  },
+  {
+    "path": "src/lib/auth/authenticated-user.ts",
+    "lines": 25
+  },
+  {
+    "path": "src/lib/auth/browser-lock.ts",
+    "lines": 12
+  },
+  {
+    "path": "src/lib/auth/credential-lock.ts",
+    "lines": 10
+  },
+  {
+    "path": "src/lib/auth/logout-recovery.ts",
+    "lines": 73
+  },
+  {
+    "path": "src/lib/auth/logout-session.ts",
+    "lines": 33
+  },
+  {
+    "path": "src/lib/auth/pending-logout.ts",
+    "lines": 34
+  },
+  {
+    "path": "src/lib/auth/session-scope.ts",
+    "lines": 56
+  },
+  {
+    "path": "src/lib/auth/session-storage.ts",
+    "lines": 51
+  },
+  {
+    "path": "src/lib/auth/startup-recovery.ts",
+    "lines": 79
+  },
+  {
+    "path": "src/lib/auth/storage.ts",
+    "lines": 23
+  },
+  {
+    "path": "src/lib/brand.ts",
+    "lines": 2
+  },
+  {
+    "path": "src/lib/browser-lifecycle.ts",
+    "lines": 21
+  },
+  {
+    "path": "src/lib/contracts/fulfillment.ts",
+    "lines": 53
+  },
+  {
+    "path": "src/lib/contracts/location.ts",
+    "lines": 13
+  },
+  {
+    "path": "src/lib/contracts/operations.ts",
+    "lines": 36
+  },
+  {
+    "path": "src/lib/contracts/order.ts",
+    "lines": 29
+  },
+  {
+    "path": "src/lib/contracts/product.ts",
+    "lines": 71
+  },
+  {
+    "path": "src/lib/contracts/returns.ts",
+    "lines": 215
+  },
+  {
+    "path": "src/lib/contracts/review-policy.ts",
+    "lines": 4
+  },
+  {
+    "path": "src/lib/contracts/reviews.ts",
+    "lines": 49
+  },
+  {
+    "path": "src/lib/contracts/store.ts",
+    "lines": 31
+  },
+  {
+    "path": "src/lib/earnings/earnings-api.ts",
+    "lines": 125
+  },
+  {
+    "path": "src/lib/earnings/payout-format.ts",
+    "lines": 11
+  },
+  {
+    "path": "src/lib/earnings/settlement-model.ts",
+    "lines": 83
+  },
+  {
+    "path": "src/lib/format.ts",
+    "lines": 3
+  },
+  {
+    "path": "src/lib/hooks/use-countdown.ts",
+    "lines": 26
+  },
+  {
+    "path": "src/lib/hooks/use-page-active.ts",
+    "lines": 13
+  },
+  {
+    "path": "src/lib/hooks/use-url-state.ts",
+    "lines": 24
+  },
+  {
+    "path": "src/lib/media/images.ts",
+    "lines": 99
+  },
+  {
+    "path": "src/lib/products/moderation.ts",
+    "lines": 12
+  },
+  {
+    "path": "src/lib/query-client.ts",
+    "lines": 28
+  },
+  {
+    "path": "src/proxy.ts",
+    "lines": 79
+  }
+]

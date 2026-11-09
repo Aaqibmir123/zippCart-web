@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-08",
+  "scope": "web only",
+  "protectedNativeBackendFiles": 976,
+  "protectedMismatches": 0,
+  "currentSourceModules": 168,
+  "retiredWebFiles": 208,
+  "nativeRuntimeDependencies": [],
+  "checks": {
+    "unit": {
+      "passed": 17,
+      "failed": 0,
+      "skipped": 0
+    },
+    "typecheck": "passed",
+    "format": "passed",
+    "optimizedNormalBuild": "passed",
+    "isolatedBrowserLatest": {
+      "desktop-chromium": {
+        "passed": 34,
+        "failed": 1,
+        "skipped": 0
+      },
+      "desktop-firefox": {
+        "passed": 34,
+        "failed": 1,
+        "skipped": 0
+      },
+      "android-chromium-emulation": {
+        "passed": 34,
+        "failed": 1,
+        "skipped": 0
+      },
+      "iphone-webkit-emulation": {
+        "passed": 33,
+        "failed": 2,
+        "skipped": 0
+      }
+    },
+    "teardownSmoke": "passed; zero disposable directories and test listeners verified",
+    "optimizedSiteSmoke": {
+      "login": 200,
+      "anonymousAdmin": 307,
+      "anonymousSeller": 307
+    }
+  },
+  "nativeCleanup": "NO-GO",
+  "productionAccess": false
+}

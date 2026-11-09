@@ -1,0 +1,195 @@
+{
+  "scope": "Create Seller atomic persistence regression; disposable fixtures only",
+  "runningBackend": {
+    "port": 4000,
+    "database": "zippcart_local",
+    "mongoHost": "127.0.0.1",
+    "mongoPort": 27017,
+    "topology": "standalone",
+    "effectiveProcessEnvironmentChecked": true,
+    "socketDestinationChecked": true,
+    "watcherReloadedFix": true,
+    "health": "ok"
+  },
+  "localReadOnlyAudit": {
+    "users": 2,
+    "invitedUsers": 0,
+    "invitations": 0,
+    "stores": 0,
+    "incompleteInvitations": 0,
+    "orphanStores": 0,
+    "danglingSellerRoles": 0
+  },
+  "rootCause": {
+    "mongoCode": 20,
+    "codeName": "IllegalOperation",
+    "transactionReadProbeReproduced": true
+  },
+  "backendUnit": {
+    "total": 463,
+    "passed": 436,
+    "failed": 0,
+    "skipped": 27,
+    "standaloneRunSeparately": true
+  },
+  "webUnit": {
+    "passed": 17,
+    "failed": 0
+  },
+  "format": "passed",
+  "sourceSize": {
+    "files": 775,
+    "limitExclusive": 500,
+    "passed": true
+  },
+  "browsers": {
+    "stats": {
+      "startTime": "2026-11-08T11:15:17.993Z",
+      "duration": 204644.20400000003,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "checks": [
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 43,
+        "title": "Admin invites Seller, mandatory first change and real onboarding gate all dashboard access",
+        "project": "desktop-chromium",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 10942
+          }
+        ]
+      },
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 43,
+        "title": "Admin invites Seller, mandatory first change and real onboarding gate all dashboard access",
+        "project": "desktop-firefox",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 15058
+          }
+        ]
+      },
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 43,
+        "title": "Admin invites Seller, mandatory first change and real onboarding gate all dashboard access",
+        "project": "android-chromium-emulation",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 10451
+          }
+        ]
+      },
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 43,
+        "title": "Admin invites Seller, mandatory first change and real onboarding gate all dashboard access",
+        "project": "iphone-webkit-emulation",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 13706
+          }
+        ]
+      },
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 329,
+        "title": "Concurrent invitations are idempotent, reuse customer identity and cannot overwrite existing credentials",
+        "project": "desktop-chromium",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 6235
+          }
+        ]
+      },
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 329,
+        "title": "Concurrent invitations are idempotent, reuse customer identity and cannot overwrite existing credentials",
+        "project": "desktop-firefox",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 6470
+          }
+        ]
+      },
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 329,
+        "title": "Concurrent invitations are idempotent, reuse customer identity and cannot overwrite existing credentials",
+        "project": "android-chromium-emulation",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 5763
+          }
+        ]
+      },
+      {
+        "file": "web/tests/acceptance/workspace-security.spec.ts",
+        "line": 329,
+        "title": "Concurrent invitations are idempotent, reuse customer identity and cannot overwrite existing credentials",
+        "project": "iphone-webkit-emulation",
+        "status": "expected",
+        "runs": [
+          {
+            "status": "passed",
+            "durationMs": 6079
+          }
+        ]
+      }
+    ]
+  },
+  "production": {
+    "connected": false,
+    "recordsModified": 0,
+    "deployed": false
+  },
+  "changedFiles": [
+    "backend/src/admin/repositories/seller-invitation.repository.js",
+    "backend/tests/seller-invitation-standalone.test.js",
+    "web/tests/local/runtime.mjs",
+    "web/docs/CREATE-SELLER-FIX.md",
+    "web/docs/create-seller-fix-results.json",
+    "web/docs/SECURE-WORKSPACE-REPORT.md"
+  ],
+  "standalone": {
+    "topology": "standalone",
+    "passed": 10,
+    "failed": 0,
+    "skipped": 0,
+    "includesParentSuiteTest": true,
+    "credentialRaceGuard": "passed",
+    "missingUniqueIndexGuard": "passed",
+    "completeOnboardingLoginLogout": "passed"
+  },
+  "cleanup": {
+    "ownedTestPorts": {
+      "3200": "closed",
+      "4500": "closed",
+      "4501": "closed",
+      "27139": "closed"
+    },
+    "disposableDirectoriesRemaining": 0,
+    "temporaryLogRemoved": true,
+    "existingNormalBackendLeftRunning": true
+  }
+}

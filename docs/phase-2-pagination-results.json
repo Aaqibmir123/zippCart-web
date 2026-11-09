@@ -1,0 +1,53 @@
+{
+  "run": "final large-data pagination, shipping phone lookup and financial filter/page acceptance",
+  "stats": {
+    "startTime": "2026-11-08T05:36:06.423Z",
+    "duration": 71339.312,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "pagination.spec.ts",
+      "line": 68,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 7241,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 68,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 11632,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 68,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 6108,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 68,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 13583,
+      "retry": 0,
+      "issue": null
+    }
+  ]
+}

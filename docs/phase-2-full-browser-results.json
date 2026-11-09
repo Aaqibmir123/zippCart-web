@@ -1,0 +1,1333 @@
+{
+  "run": "full acceptance before pagination fixture correction",
+  "stats": {
+    "startTime": "2026-11-08T05:20:51.408Z",
+    "duration": 587740.7649999999,
+    "expected": 123,
+    "skipped": 0,
+    "unexpected": 9,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "admin.spec.ts",
+      "line": 16,
+      "title": "Overview period, queue links, route reload and browser history",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2426,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 16,
+      "title": "Overview period, queue links, route reload and browser history",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 4714,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 16,
+      "title": "Overview period, queue links, route reload and browser history",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3193,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 16,
+      "title": "Overview period, queue links, route reload and browser history",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3834,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 42,
+      "title": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2301,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 42,
+      "title": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3487,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 42,
+      "title": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3701,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 42,
+      "title": "Stores: private document, revisioned approval, rejection and active controls",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 5798,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 89,
+      "title": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 3150,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 89,
+      "title": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 6873,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 89,
+      "title": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 5567,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 89,
+      "title": "Product moderation: exact reviewed version, rejection reason and approval",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 7394,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 144,
+      "title": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2540,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 144,
+      "title": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 5113,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 144,
+      "title": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3978,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 144,
+      "title": "Shipping search validation, date/queue filters, details, label QR and PDF",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 5069,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 195,
+      "title": "Dispatch settings validation and persisted backend contract",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2347,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 195,
+      "title": "Dispatch settings validation and persisted backend contract",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3686,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 195,
+      "title": "Dispatch settings validation and persisted backend contract",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2822,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 195,
+      "title": "Dispatch settings validation and persisted backend contract",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4057,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 228,
+      "title": "Review moderation and audit history",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1869,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 228,
+      "title": "Review moderation and audit history",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3659,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 228,
+      "title": "Review moderation and audit history",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2725,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 228,
+      "title": "Review moderation and audit history",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3782,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 258,
+      "title": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1603,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 258,
+      "title": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3526,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 258,
+      "title": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2705,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "admin.spec.ts",
+      "line": 258,
+      "title": "Notifications route to actual Admin order details; legacy returns stay read-only",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3701,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 8,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2665,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 8,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3728,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 8,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2715,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 8,
+      "title": "Admin password, server authorization, refresh and mobile logout",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "durationMs": 3829,
+      "retry": 0,
+      "issue": "WEBKIT_COOKIE_METADATA"
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 70,
+      "title": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2222,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 70,
+      "title": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 4497,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 70,
+      "title": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3821,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 70,
+      "title": "Seller real OTP, resend cooldown, phone correction and role boundaries",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 5215,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 108,
+      "title": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1106,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 108,
+      "title": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 1976,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 108,
+      "title": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 1355,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 108,
+      "title": "Login downloads no Admin, Seller, PDF or QR business modules",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 1648,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 157,
+      "title": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2816,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 157,
+      "title": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 2621,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 157,
+      "title": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3405,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "auth.spec.ts",
+      "line": 157,
+      "title": "Shared-cookie tabs revoke old Admin access and restore the new Seller identity",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4782,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 14,
+      "title": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2411,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 14,
+      "title": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 2684,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 14,
+      "title": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2644,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 14,
+      "title": "Color/size stock and sequential browser photos preserve earlier successful uploads",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4399,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 81,
+      "title": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2165,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 81,
+      "title": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 1986,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 81,
+      "title": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2568,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 81,
+      "title": "Stale inventory cannot overwrite newer stock; refresh recovers the editor",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4280,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 117,
+      "title": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1260,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 117,
+      "title": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 1776,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 117,
+      "title": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2561,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "catalogue.spec.ts",
+      "line": 117,
+      "title": "Stale Admin product decision refetches the current review instead of overwriting it",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3265,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 29,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "desktop-chromium",
+      "status": "failed",
+      "durationMs": 754,
+      "retry": 0,
+      "issue": "TEST_FIXTURE_SCHEMA"
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 29,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "desktop-firefox",
+      "status": "failed",
+      "durationMs": 640,
+      "retry": 0,
+      "issue": "TEST_FIXTURE_SCHEMA"
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 29,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "android-chromium-emulation",
+      "status": "failed",
+      "durationMs": 1129,
+      "retry": 0,
+      "issue": "TEST_FIXTURE_SCHEMA"
+    },
+    {
+      "file": "pagination.spec.ts",
+      "line": 29,
+      "title": "Real cursor/page pagination covers stores, moderation, support, inbox, reviews, catalogue and owned-order deep links",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "durationMs": 1248,
+      "retry": 0,
+      "issue": "TEST_FIXTURE_SCHEMA"
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 14,
+      "title": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2383,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 14,
+      "title": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 4261,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 14,
+      "title": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 4016,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 14,
+      "title": "New store registration validates steps, four browser documents, payout and consent",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 5120,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 97,
+      "title": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1294,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 97,
+      "title": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 1871,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 97,
+      "title": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2724,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "registration.spec.ts",
+      "line": 97,
+      "title": "Registering another owner requires genuine phone OTP proof without changing the current identity",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3392,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 16,
+      "title": "Seller availability, ownership isolation and browser notification links",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2059,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 16,
+      "title": "Seller availability, ownership isolation and browser notification links",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 2763,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 16,
+      "title": "Seller availability, ownership isolation and browser notification links",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2791,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 16,
+      "title": "Seller availability, ownership isolation and browser notification links",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 5120,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 75,
+      "title": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1948,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 75,
+      "title": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3375,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 75,
+      "title": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3095,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 75,
+      "title": "Catalogue status, URL search, live inventory, archive/restore/delete",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4966,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 123,
+      "title": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1852,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 123,
+      "title": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 4080,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 123,
+      "title": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2968,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 123,
+      "title": "Product creation validates prices, prepares browser photos and submits a real pending product",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4633,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 187,
+      "title": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2618,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 187,
+      "title": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 6059,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 187,
+      "title": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 4911,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 187,
+      "title": "Owned order viewed marker, stock issue block and explicit handover confirmation",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 6800,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 237,
+      "title": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1504,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 237,
+      "title": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3427,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 237,
+      "title": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2355,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 237,
+      "title": "Seller replies require policy acceptance; private earnings remain read-only",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3828,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 272,
+      "title": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1758,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 272,
+      "title": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3707,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 272,
+      "title": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2560,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "seller.spec.ts",
+      "line": 272,
+      "title": "Seller store editing preserves owner identity, documents and review workflow",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4538,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 77,
+      "title": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1837,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 77,
+      "title": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 5019,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 77,
+      "title": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3764,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 77,
+      "title": "Exchange inspection, reserved-stock dispatch and delivered confirmation",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4965,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 99,
+      "title": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2275,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 99,
+      "title": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 6495,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 99,
+      "title": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 4335,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 99,
+      "title": "Inspection dispute evidence, information deadline, customer reply and reasoned closure",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 6141,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 163,
+      "title": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1992,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 163,
+      "title": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 3752,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 163,
+      "title": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3983,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 163,
+      "title": "Pickup failure/rescheduling and initial rejection remain stage-restricted",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 5350,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 204,
+      "title": "Original-payment refunds expose no manual completion or information action",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 1075,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 204,
+      "title": "Original-payment refunds expose no manual completion or information action",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 1437,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 204,
+      "title": "Original-payment refunds expose no manual completion or information action",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 2259,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "support-branches.spec.ts",
+      "line": 204,
+      "title": "Original-payment refunds expose no manual completion or information action",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 2295,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 16,
+      "title": "Current-password change revokes every real session and permits only the new password",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 3940,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 16,
+      "title": "Current-password change revokes every real session and permits only the new password",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 4572,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 16,
+      "title": "Current-password change revokes every real session and permits only the new password",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 6763,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 16,
+      "title": "Current-password change revokes every real session and permits only the new password",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 7048,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 55,
+      "title": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 2347,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 55,
+      "title": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 2405,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 55,
+      "title": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 4570,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 55,
+      "title": "Password rate limiting and existing Admin OTP remain enforced by the server",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3013,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 74,
+      "title": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 3212,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 74,
+      "title": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 5396,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 74,
+      "title": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3989,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 74,
+      "title": "Admin resolves a Seller stock issue through the existing Attention workflow",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 4551,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 113,
+      "title": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 4144,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 113,
+      "title": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 7578,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 113,
+      "title": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 5052,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 113,
+      "title": "Support chat/evidence, pickup, inspection and confirmed manual refund",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 5173,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 230,
+      "title": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "desktop-chromium",
+      "status": "passed",
+      "durationMs": 3452,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 230,
+      "title": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "desktop-firefox",
+      "status": "passed",
+      "durationMs": 5019,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 230,
+      "title": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "android-chromium-emulation",
+      "status": "passed",
+      "durationMs": 3109,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 230,
+      "title": "Admin earnings collections and confirmed idempotent seller payouts",
+      "project": "iphone-webkit-emulation",
+      "status": "passed",
+      "durationMs": 3317,
+      "retry": 0,
+      "issue": null
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 290,
+      "title": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "desktop-chromium",
+      "status": "failed",
+      "durationMs": 22420,
+      "retry": 0,
+      "issue": "BACKEND_RTO_OBJECTID_CLONE"
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 290,
+      "title": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "desktop-firefox",
+      "status": "failed",
+      "durationMs": 23018,
+      "retry": 0,
+      "issue": "BACKEND_RTO_OBJECTID_CLONE"
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 290,
+      "title": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "android-chromium-emulation",
+      "status": "failed",
+      "durationMs": 22382,
+      "retry": 0,
+      "issue": "BACKEND_RTO_OBJECTID_CLONE"
+    },
+    {
+      "file": "workflows.spec.ts",
+      "line": 290,
+      "title": "Complete COD RTO: Admin receipt, Seller receipt/inspection and safe restocking",
+      "project": "iphone-webkit-emulation",
+      "status": "failed",
+      "durationMs": 22331,
+      "retry": 0,
+      "issue": "BACKEND_RTO_OBJECTID_CLONE"
+    }
+  ]
+}
