@@ -51,7 +51,7 @@ export function LoginScreen() {
         ({ user } = await authApi.me());
       } catch {
         throw new Error(
-          "Your password was accepted, but this browser could not confirm the secure session. Open the website and API using the same hostname (both localhost or both 127.0.0.1), then try again.",
+          "Your password was accepted, but the secure session could not be verified. Please try again. If this continues, contact support.",
         );
       }
       if (

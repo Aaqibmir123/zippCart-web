@@ -202,7 +202,7 @@ test("Login reports a browser session-cookie failure instead of staying on a loa
   await page.getByRole("button", { name: "Login", exact: true }).click();
   await expect(
     page.getByText(
-      "Your password was accepted, but this browser could not confirm the secure session. Open the website and API using the same hostname (both localhost or both 127.0.0.1), then try again.",
+      "Your password was accepted, but the secure session could not be verified. Please try again. If this continues, contact support.",
     ),
   ).toBeVisible();
   await expect(page.getByLabel("Mobile Number", { exact: true })).toBeVisible();
