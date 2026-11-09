@@ -187,6 +187,33 @@ test("production same-origin API rewrite targets only the configured HTTPS API o
     else process.env.ZIPPCART_API_ORIGIN = originalUpstream;
   }
 });
+test("server-side workspace verification forwards the signed gateway route cookie", () => {
+  const source = fs.readFileSync(path.join(sourceRoot, "proxy.ts"), "utf8");
+  assert.match(source, /request\.cookies\.get\("tenantRoute"\)/);
+  assert.match(source, /tenantRoute=\$\{tenantRoute\}/);
+  assert.match(source, /headers:\s*\{\s*Cookie:\s*sessionCookies\s*\}/);
+  const compiled = ts.transpileModule(source, {
+    compilerOptions: { module: ts.ModuleKind.CommonJS },
+  }).outputText;
+  const module = { exports: {} };
+  new Function("module", "exports", "require", compiled)(
+    module,
+    module.exports,
+    (name) => {
+      if (name === "next/server") return { NextResponse: {} };
+      if (name === "./lib/api/config") return { serverApiRoot: () => "" };
+      throw new Error(`Unexpected import: ${name}`);
+    },
+  );
+  assert.equal(
+    module.exports.workspaceSessionCookieHeader("access-value", "route-value"),
+    "accessToken=access-value; tenantRoute=route-value",
+  );
+  assert.equal(
+    module.exports.workspaceSessionCookieHeader("access-value"),
+    "accessToken=access-value",
+  );
+});
 test("all support stage permissions match the native action model, including original-payment restriction", () => {
   const dom = loadDom()("features/admin/support/action-model.ts");
   const nativePath = path.resolve(

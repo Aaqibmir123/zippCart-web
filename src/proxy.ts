@@ -1,11 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
 import { serverApiRoot } from "./lib/api/config";
 
+export function workspaceSessionCookieHeader(
+  accessToken: string,
+  tenantRoute?: string,
+): string {
+  return [
+    `accessToken=${accessToken}`,
+    ...(tenantRoute ? [`tenantRoute=${tenantRoute}`] : []),
+  ].join("; ");
+}
+
 export async function proxy(request: NextRequest) {
   if (!/^\/(admin|seller|account)(\/|$)/.test(request.nextUrl.pathname))
     return NextResponse.next();
   const token = request.cookies.get("accessToken")?.value;
   if (!token) return NextResponse.redirect(new URL("/login", request.url));
+  const tenantRoute = request.cookies.get("tenantRoute")?.value;
+  const sessionCookies = workspaceSessionCookieHeader(token, tenantRoute);
   try {
     const root = serverApiRoot(
       process.env.NEXT_PUBLIC_API_URL,
@@ -15,7 +27,7 @@ export async function proxy(request: NextRequest) {
     // The backend verifies the signed cookie, live session and current roles.
     // Next never decodes a cookie into a locally trusted Admin identity.
     const response = await fetch(`${root}/auth/me`, {
-      headers: { Cookie: `accessToken=${token}` },
+      headers: { Cookie: sessionCookies },
       cache: "no-store",
       redirect: "error",
       signal: AbortSignal.timeout(10000),
