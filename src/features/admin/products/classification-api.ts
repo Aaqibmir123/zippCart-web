@@ -20,6 +20,7 @@ export type ClassificationProduct = {
   status: string;
   reason: string;
   revision: number;
+  allowCatalogChange?: boolean;
 };
 export type ClassificationPage = {
   enabled: boolean;
@@ -50,12 +51,12 @@ export const classificationApi = {
 
 export function classificationOptions(
   nodes: CatalogCategory[],
-  category: string,
+  category?: string,
 ) {
   return nodes
     .filter(
       (node) =>
-        node.legacyCategory === category &&
+        (!category || node.legacyCategory === category) &&
         !nodes.some((child) => child.parentId === node.id),
     )
     .map((node) => ({ node, path: categoryPath(nodes, node.id) }))

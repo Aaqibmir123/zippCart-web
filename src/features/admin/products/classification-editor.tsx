@@ -39,7 +39,10 @@ export function ClassificationEditor({
   const [busy, setBusy] = useState(false),
     [error, setError] = useState("");
   const lock = useRef(false);
-  const options = classificationOptions(nodes, product.category);
+  const options = classificationOptions(
+    nodes,
+    product.allowCatalogChange ? undefined : product.category,
+  );
   const selected = options.find((option) => option.value === categoryId);
   async function save() {
     if (

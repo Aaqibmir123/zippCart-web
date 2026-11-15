@@ -131,6 +131,18 @@ test("classification offers only real audience leaves; no inferred defaults or i
     ),
   );
 });
+
+test("server-authorized production classification can explicitly place a legacy Other product in a confirmed audience", async () => {
+  const app = setup();
+  app.props.product.category = "Other";
+  app.props.product.allowCatalogChange = true;
+  const tree = choose(app);
+  assert.equal(button(tree).props.disabled, false);
+  await button(tree).props.onClick();
+  assert.equal(app.requests.length, 1);
+  assert.equal(app.requests[0][1].categoryId, "shoes");
+  assert.equal(app.requests[0][1].audienceConfirmed, true);
+});
 test("explicit confirmation saves one product with revision, blocks duplicate clicks and resets confirmation on category change", async () => {
   let resolve;
   const app = setup(
