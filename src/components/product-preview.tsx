@@ -4,6 +4,10 @@ import type { SellerProduct } from "../lib/contracts/product";
 import { money } from "../lib/format";
 import { Card, Details } from "./ui";
 import { Dialog } from "./dialog";
+import {
+  categoryPath,
+  useCategoryTaxonomy,
+} from "../lib/products/category-taxonomy";
 export function ProductPreview({
   title,
   product,
@@ -12,6 +16,11 @@ export function ProductPreview({
   product: SellerProduct;
 }) {
   const [photo, setPhoto] = useState<string | null>(null);
+  const taxonomy = useCategoryTaxonomy(!!product.categoryId);
+  const assignment = categoryPath(
+    taxonomy.data?.categories ?? [],
+    product.categoryId,
+  );
   return (
     <Card>
       <h2 className="mb-5 text-lg font-bold">{title}</h2>
@@ -19,6 +28,13 @@ export function ProductPreview({
       <Details
         values={{
           Category: `${product.category}${product.customCategory ? ` · ${product.customCategory}` : ""}`,
+          ...(product.categoryId
+            ? {
+                Subcategory: assignment.length
+                  ? assignment.map((node) => node.name).join(" / ")
+                  : "Saved assignment (category details unavailable)",
+              }
+            : {}),
           Brand: product.brand,
           SKU: product.sku,
           Price: money(product.price),

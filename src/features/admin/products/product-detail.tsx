@@ -14,6 +14,8 @@ import {
   TextArea,
 } from "../../../components/ui";
 import { ProductPreview } from "../../../components/product-preview";
+import { ApprovalPlacement } from "./approval-placement";
+import type { ReviewPlacementInput } from "../../../lib/products/category-placement";
 
 export function ProductDetail({ id }: { id: string }) {
   const { user } = useAuth();
@@ -29,8 +31,23 @@ export function ProductDetail({ id }: { id: string }) {
   const [feedback, setFeedback] = useState("");
   const [busy, setBusy] = useState(false);
   const lock = useRef(false);
+  const [placement, setPlacement] = useState<{
+    id: string;
+    version: number;
+    value: ReviewPlacementInput;
+  }>();
+  const [placementEpoch, setPlacementEpoch] = useState(0);
   async function decide(decision: "approved" | "rejected") {
     if (lock.current || !product || query.isFetching || query.isError) return;
+    if (
+      decision === "approved" &&
+      (!placement ||
+        placement.id !== id ||
+        placement.version !== product.submissionVersion)
+    ) {
+      setError("Confirm customer placement before approval.");
+      return;
+    }
     if (decision === "rejected" && reason.trim().length < 3) {
       setError("Enter a rejection reason (at least 3 characters).");
       return;
@@ -44,6 +61,7 @@ export function ProductDetail({ id }: { id: string }) {
         product.submissionVersion!,
         decision,
         reason,
+        decision === "approved" ? placement?.value : undefined,
       );
       await Promise.all(
         [
@@ -63,6 +81,8 @@ export function ProductDetail({ id }: { id: string }) {
     } catch (cause) {
       setError(cause instanceof Error ? cause.message : "Review failed.");
       if (isApiError(cause) && cause.status === 409) {
+        setPlacement(undefined);
+        setPlacementEpoch((value) => value + 1);
         setReason("");
         await query.refetch();
       }
@@ -91,7 +111,11 @@ export function ProductDetail({ id }: { id: string }) {
           <Button
             variant="secondary"
             disabled={busy || query.isFetching}
-            onClick={() => void query.refetch()}
+            onClick={() => {
+              setPlacement(undefined);
+              setPlacementEpoch((value) => value + 1);
+              void query.refetch();
+            }}
           >
             Refresh submission
           </Button>
@@ -136,6 +160,18 @@ export function ProductDetail({ id }: { id: string }) {
           ) : (
             product.moderationStatus === "pending" && (
               <Card>
+                <ApprovalPlacement
+                  key={`${id}:${product.submissionVersion}:${placementEpoch}`}
+                  product={product.submitted}
+                  disabled={busy || query.isFetching}
+                  onChange={(value) =>
+                    setPlacement(
+                      value
+                        ? { id, version: product.submissionVersion!, value }
+                        : undefined,
+                    )
+                  }
+                />
                 <TextArea
                   label="Rejection reason"
                   value={reason}

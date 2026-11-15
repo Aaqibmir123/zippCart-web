@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { productReviewApi, type ReviewFilter } from "./products-api";
+import { ClassificationLink } from "./classification-link";
 import { adminStoreApi } from "../stores/stores-api";
 import { useAuth } from "../../auth/auth-provider";
 import { useUrlState } from "../../../lib/hooks/use-url-state";
@@ -47,6 +48,7 @@ export function ProductsScreen() {
         title="Product approvals"
         description="Review submitted changes while approved product content stays live."
       />
+      <ClassificationLink />
       <Card className="mb-6">
         <div className="grid items-end gap-4 sm:grid-cols-3">
           <Select

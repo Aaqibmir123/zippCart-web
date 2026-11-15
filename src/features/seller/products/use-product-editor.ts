@@ -13,6 +13,8 @@ import {
 } from "../../../lib/auth/session-scope";
 import { isApiError } from "../../../lib/api/api-error";
 import { useSaveSellerProduct } from "./use-products";
+import { useCategoryTaxonomy } from "../../../lib/products/category-taxonomy";
+import { placementSummary } from "../../../lib/products/category-placement";
 import {
   buildProduct,
   initialFields,
@@ -25,6 +27,7 @@ export function useProductEditor(ownerId?: string, product?: SellerProduct) {
   const [original] = useState(product);
   const [creationKey] = useState(requestKey);
   const [fields, setFields] = useState(() => initialFields(product));
+  const taxonomy = useCategoryTaxonomy();
   const [active, setActive] = useState(product?.active ?? true);
   const [sizes, setSizes] = useState(product?.sizes ?? []);
   const [images, setImages] = useState(product?.images ?? []);
@@ -124,6 +127,7 @@ export function useProductEditor(ownerId?: string, product?: SellerProduct) {
       const input = buildProduct(
         { fields, active, sizes, images, colors, quantities, creationKey },
         original,
+        taxonomy.data?.categories ?? [],
       );
       await saveMutation.mutateAsync({ id: original?.id, input });
       router.push("/seller/products");
@@ -141,6 +145,11 @@ export function useProductEditor(ownerId?: string, product?: SellerProduct) {
     }
   }
   return {
+    placementPreview: placementSummary(
+      taxonomy.data?.categories ?? [],
+      fields.categoryId || null,
+      fields.categoryPlacement ?? "needs-classification",
+    ),
     fields,
     setFields,
     active,

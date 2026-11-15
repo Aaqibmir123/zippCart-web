@@ -15,6 +15,7 @@ import {
 } from "../../../components/ui";
 import { ProductPreview } from "../../../components/product-preview";
 import { ProductPhotos } from "./product-photos";
+import { PlacementFields } from "./placement-fields";
 import { useProductEditor } from "./use-product-editor";
 import {
   productCategories,
@@ -124,6 +125,8 @@ export function ProductForm({ product }: { product?: SellerProduct }) {
                   state.setFields((previous) => ({
                     ...previous,
                     category: value,
+                    categoryId:
+                      value === previous.category ? previous.categoryId : "",
                     customCategory:
                       value === "Other" ? previous.customCategory : "",
                   }))
@@ -136,6 +139,23 @@ export function ProductForm({ product }: { product?: SellerProduct }) {
               />
               {state.fields.category === "Other" &&
                 field("customCategory", "Enter product category", 60)}
+              <div className="sm:col-span-2">
+                <PlacementFields
+                  category={state.fields.category}
+                  value={state.fields.categoryId}
+                  status={
+                    state.fields.categoryPlacement ?? "needs-classification"
+                  }
+                  onChange={(categoryId, categoryPlacement) =>
+                    state.setFields((previous) => ({
+                      ...previous,
+                      categoryId,
+                      categoryPlacement,
+                    }))
+                  }
+                  disabled={state.busy}
+                />
+              </div>
               {field("brand", "Brand (optional)", 80)}
               {field("sku", "SKU / Product code (optional)", 60)}
               <div className="sm:col-span-2">
@@ -333,6 +353,9 @@ export function ProductForm({ product }: { product?: SellerProduct }) {
           </>
         )}
         {step === 2 && <ProductPhotos state={state} />}
+        <p className="font-semibold text-purple-900">
+          {state.placementPreview}
+        </p>
         <div className="flex flex-wrap justify-end gap-3">
           {step > 0 && (
             <Button

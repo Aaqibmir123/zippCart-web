@@ -3,16 +3,13 @@ import type {
   SellerProduct,
   SellerProductInput,
 } from "../../../lib/contracts/product";
+import {
+  placementError,
+  type CategoryPlacement,
+} from "../../../lib/products/category-placement";
+import type { CatalogCategory } from "../../../lib/products/category-taxonomy";
 
-export const productCategories = [
-  "Fashion",
-  "Watches",
-  "Beauty",
-  "Home",
-  "Accessories",
-  "Electronics",
-  "Other",
-];
+export { productCategories } from "../../../lib/products/category-placement";
 export const sizeModes = [
   "none",
   "adult",
@@ -25,6 +22,8 @@ export type SizeMode = (typeof sizeModes)[number];
 export type ProductFields = {
   name: string;
   category: string;
+  categoryId: string;
+  categoryPlacement?: CategoryPlacement;
   customCategory: string;
   description: string;
   price: string;
@@ -117,6 +116,10 @@ export function initialFields(product?: SellerProduct): ProductFields {
   return {
     name: product?.name ?? "",
     category: product?.category ?? "",
+    categoryId: product?.categoryId ?? "",
+    categoryPlacement:
+      product?.categoryPlacement ??
+      (product && !product.categoryId ? "needs-classification" : "confirmed"),
     customCategory: product?.customCategory ?? "",
     description: product?.description ?? "",
     price: product?.price.toString() ?? "",
@@ -129,16 +132,35 @@ export function initialFields(product?: SellerProduct): ProductFields {
 export function buildProduct(
   draft: ProductDraft,
   product?: SellerProduct,
+  categories: CatalogCategory[] = [],
 ): SellerProductInput {
   const { fields, sizes, images, active } = draft;
+  const categoryId =
+    fields.categoryId ??
+    (fields.category === product?.category ? (product?.categoryId ?? "") : "");
   if (
     fields.name.trim().length < 2 ||
     !fields.category ||
     !fields.description.trim()
   )
     throw new Error("Add a product name, category and description.");
-  if (fields.category === "Other" && !fields.customCategory.trim())
+  if (
+    fields.category === "Other" &&
+    !categoryId &&
+    !fields.customCategory.trim()
+  )
     throw new Error("Enter a product category.");
+  if (categoryId && !/^[a-fA-F0-9]{24}$/.test(categoryId))
+    throw new Error("Choose a valid product subcategory.");
+  if (fields.categoryPlacement) {
+    const invalid = placementError(
+      categories,
+      fields.category,
+      categoryId || null,
+      fields.categoryPlacement,
+    );
+    if (invalid) throw new Error(invalid);
+  }
   if (fields.sku.trim() && !/^[A-Za-z0-9_-]+$/.test(fields.sku.trim()))
     throw new Error(
       "SKU can contain letters, numbers, hyphens and underscores only.",
@@ -227,6 +249,14 @@ export function buildProduct(
   return {
     name: fields.name.trim(),
     category: fields.category,
+    ...(fields.categoryPlacement
+      ? { categoryPlacement: fields.categoryPlacement }
+      : {}),
+    ...(categoryId
+      ? { categoryId }
+      : product?.categoryId
+        ? { categoryId: null }
+        : {}),
     customCategory:
       fields.category === "Other" ? fields.customCategory.trim() : "",
     description: fields.description.trim(),

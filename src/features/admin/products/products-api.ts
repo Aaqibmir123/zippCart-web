@@ -1,4 +1,5 @@
 import { apiRequest } from "../../../lib/api/client";
+import type { ReviewPlacementInput } from "../../../lib/products/category-placement";
 import type {
   ProductModeration,
   SellerProduct,
@@ -54,8 +55,14 @@ export const productReviewApi = {
     submissionVersion: number,
     decision: "approved" | "rejected",
     reason: string,
+    placement?: ReviewPlacementInput,
   ) =>
     apiRequest(`/admin/products/${id}/review`, {
-      body: { submissionVersion, decision, reason },
+      body: {
+        submissionVersion,
+        decision,
+        reason,
+        ...(placement ? { placement } : {}),
+      },
     }),
 };

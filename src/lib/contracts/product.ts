@@ -17,6 +17,8 @@ export type SellerProduct = ProductModeration & {
   id: string;
   name: string;
   category: string;
+  categoryId?: string | null;
+  categoryPlacement?: "confirmed" | "needs-classification";
   customCategory: string;
   description: string;
   brand: string;
@@ -40,6 +42,8 @@ export type SellerProductSummary = Pick<
   | "id"
   | "name"
   | "category"
+  | "categoryId"
+  | "categoryPlacement"
   | "customCategory"
   | "brand"
   | "sku"
