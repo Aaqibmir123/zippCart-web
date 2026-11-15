@@ -88,12 +88,19 @@ export function CategoryPicker({
         return (
           <Select
             key={parent.id}
-            label={`${parent.name} subcategory`}
+            label={
+              parent.id === root.id && audiences.length
+                ? "Who is this product for?"
+                : `${parent.name}: product type`
+            }
             value={parents[index + 1]?.id ?? ""}
             options={[
               {
                 value: "",
-                label: "Choose a final subcategory",
+                label:
+                  parent.id === root.id && audiences.length
+                    ? "Choose customer group"
+                    : "Choose product type",
               },
               ...children.map((node) => ({ value: node.id, label: node.name })),
             ]}

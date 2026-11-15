@@ -116,7 +116,7 @@ test("seller follows actual parent IDs through Men, Clothing and Jackets", () =>
   controls = form
     .render("Fashion", form.selected.at(-1))
     .filter((item) => item.props.options);
-  const men = controls.find((item) => item.props.label === "Men subcategory");
+  const men = controls.find((item) => item.props.label === "Men: product type");
   assert.deepEqual(
     men.props.options.map((entry) => entry.value),
     ["", id(3), id(5)],
@@ -126,7 +126,7 @@ test("seller follows actual parent IDs through Men, Clothing and Jackets", () =>
     .render("Fashion", form.selected.at(-1))
     .filter((item) => item.props.options);
   controls
-    .find((item) => item.props.label === "Clothing subcategory")
+    .find((item) => item.props.label === "Clothing: product type")
     .props.onChange(id(4));
   assert.equal(form.selected.at(-1), id(4));
   const { buildProduct } = loadDom()(

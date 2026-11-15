@@ -133,12 +133,22 @@ export function ProductForm({ product }: { product?: SellerProduct }) {
                 }
                 options={[
                   { value: "", label: "Choose category" },
-                  ...productCategories,
+                  ...productCategories.map((value) => ({
+                    value,
+                    label:
+                      value === "Fashion"
+                        ? "Fashion (clothing & shoes)"
+                        : value,
+                  })),
                 ]}
                 disabled={state.busy}
               />
               {state.fields.category === "Other" &&
-                field("customCategory", "Enter product category", 60)}
+                field(
+                  "customCategory",
+                  "Custom category name (Other only)",
+                  60,
+                )}
               <div className="sm:col-span-2">
                 <PlacementFields
                   category={state.fields.category}

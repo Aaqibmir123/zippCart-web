@@ -19,7 +19,9 @@ export function PlacementFields({
   return (
     <div className="space-y-4">
       <fieldset disabled={disabled} className="space-y-3">
-        <legend className="mb-3 font-semibold">Customer placement</legend>
+        <legend className="mb-3 font-semibold">
+          Where should customers find this product?
+        </legend>
         {(["confirmed", "needs-classification"] as const).map((item) => (
           <label
             key={item}
@@ -33,11 +35,25 @@ export function PlacementFields({
               }
             />
             {item === "confirmed"
-              ? "Audience confirmed — choose final category"
-              : "Needs classification — audience not confirmed"}
+              ? "I know the correct customer category"
+              : "Ask admin to confirm the category"}
           </label>
         ))}
       </fieldset>
+      {category === "Other" && (
+        <Notice>
+          Selling clothing or shoes? Choose Fashion in Category above. Other has
+          its own product types, such as books. Typing a custom category name
+          does not change the subcategory list.
+        </Notice>
+      )}
+      {category === "Fashion" && status === "confirmed" && (
+        <p className="text-sm text-slate-600">
+          Choose who the product is for, then its type. For example: Men → Shoes
+          or Women → Clothing → Jackets. Use the product information you can
+          confirm.
+        </p>
+      )}
       {status === "confirmed" ? (
         <CategoryPicker
           category={category}
@@ -47,8 +63,10 @@ export function PlacementFields({
         />
       ) : (
         <Notice>
-          Do not guess audience from names, photos or sizes. After approval,
-          this product stays accessible through Shop All.
+          You can submit this product for review without choosing a subcategory.
+          After approval, customers can find it in Shop All. It will not appear
+          in a specific customer category until its placement is confirmed. Do
+          not guess who it is for from names, photos or sizes.
         </Notice>
       )}
     </div>
